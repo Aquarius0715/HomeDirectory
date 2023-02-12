@@ -4,6 +4,7 @@
 #include <stdio.h>   /* 各入出力に使用 */
 #include <stdlib.h>  /* 乱数生成に使用 */
 #include <time.h>    /* 乱数のシードを初期化するために使用 */
+#include <ctype.h>   /* 入力を大文字に揃える時に使用 */
 
 /**
 	各変数、列挙の宣言
@@ -13,13 +14,15 @@ typedef enum SortClass {
   SELECTION_SORT,
   BUBBLE_SORT,
   QUICK_SORT,
-  RADIX_SORT
+  RADIX_SORT,
+  NONE_SORT_CLASS
 } SortClass;
 
 /* 昇順か降順かを列挙 */
 typedef enum SortType {
   ASCENDING,
-  DESCENDING
+  DESCENDING,
+  NONE_SORT_TYPE
 } SortType;
 
 /* ソートするデータ形式を列挙 */
@@ -28,7 +31,8 @@ typedef enum DataType {
   ORDERED_DESCENDING,
   RANDOM,
   PARTIALLY_ORDERED_ASCENDING,
-  PARTIALLY_ORDERED_DESCENDING
+  PARTIALLY_ORDERED_DESCENDING,
+  NONE_DATA_TYPE
 } DataType;
 
 /* ソート結果を格納する構造体を定義 */
@@ -43,9 +47,9 @@ typedef struct ResultSet {
 
 int NUMBER= -1;           /* 配列の大きさの変数 */
 double RATIO = -1;
-SortClass E_sortClass = -1; /* ソートの種類を格納する変数 */
-SortType E_sortType = -1;   /* 昇順か降順かを格納する変数 */
-DataType E_dataType = -1;   /* ソートするデータの形式を格納する変数 */
+SortClass E_sortClass = NONE_SORT_CLASS; /* ソートの種類を格納する変数 */
+SortType E_sortType = NONE_SORT_TYPE;   /* 昇順か降順かを格納する変数 */
+DataType E_dataType = NONE_DATA_TYPE;   /* ソートするデータの形式を格納する変数 */
 
 int* array = NULL;        /* ソートするデータを格納するポインタ配列 */
 
@@ -60,18 +64,19 @@ void initialSetting();
 int* generateArray();
 void sort();
 
-int* createOrderedData(SortType type);
+int* createOrderedData(SortType E_sortType);
 int* createRandomData();
-int* createPartiallyOrderedData(SortType type, double ratio);
+int* createPartiallyOrderedData(SortType E_sortType, double ratio);
 
-ResultSet selectionSort(SortType type);
-ResultSet bubbleSort(SortType type);
-ResultSet quickSort(SortType type, int*num, int left, int right, int compareCount, int swapCount);
-ResultSet radixSort(SortType type);
+ResultSet selectionSort(SortType E_sortType);
+ResultSet bubbleSort(SortType E_sortType);
+ResultSet quickSort(SortType E_sortType, int* num, int left, int right, int compareCount, int swapCount);
+ResultSet radixSort(SortType E_sortType);
 
 int* copyArray(int* original, int* copyTo);
 int* showArray(int* array1);
 void showResult(ResultSet result);
+void showSettings();
 int* swapElement(int* array1, int p1, int p2);
 int getMaxRadix(int n);
 
@@ -81,11 +86,32 @@ int getMaxRadix(int n);
 	メイン関数
  */
 int main(void) {
-   initialSetting();
-	generateArray();
-	sort();
-	free(array);
-  return 0;
+  char keyBoardInput, options;
+  while (1) {
+	 system("clear");
+	 showSettings();
+	 printf("S: ソート, R: ソートデータの再設定, Q: 終了\n");
+	 printf("Type desired options(S, R, H, Q)");
+	 scanf("%s", &keyBoardInput);
+	 options = toupper(keyBoardInput);
+	 switch (options) {
+	 case 'S':
+		E_sortClass = NONE_SORT_CLASS;
+		E_sortType = NONE_SORT_TYPE;
+		initialSetting();
+		sort();
+		break;
+	 case 'R':
+		NUMBER = -1;
+		E_dataType = NONE_DATA_TYPE;
+		free(array);
+		initialSetting();
+		break;
+	 case 'Q':
+		free(array);
+		return 0;
+	 }
+  }
 }
 
 char* sortClass(SortClass E_sortClass) {
@@ -98,6 +124,8 @@ char* sortClass(SortClass E_sortClass) {
 	 return "クイックソート";
   case RADIX_SORT:
 	 return "基数ソート";
+  case NONE_SORT_CLASS:
+	 return "選択なし";
   }
   return NULL;
 }
@@ -108,6 +136,8 @@ char* sortType(SortType E_sortType) {
 	 return "昇順";
   case DESCENDING:
 	 return "降順";
+  case NONE_SORT_TYPE:
+	 return "選択なし";
   }
   return NULL;
 }
@@ -124,61 +154,75 @@ char* dataType(DataType E_dataType) {
 	 return "一部が昇順に並んだデータ";
   case PARTIALLY_ORDERED_DESCENDING:
 	 return "一部が降順に並んだデータ";
+  case NONE_DATA_TYPE:
+	 return "選択なし";
   }
   return NULL;
 }
 
 void initialSetting() {
   system("clear");
-  while (NUMBER < 1) {
-	 printf("Type Array Size: ");
-	 scanf("%d", &NUMBER);
+  if (NUMBER == -1) {
+	 while (NUMBER < 1) {
+		printf("Type Array Size: ");
+		scanf("%d", &NUMBER);
+	 }
+	 array = (int*) malloc(sizeof(int) * NUMBER);
   }
-  array = (int*) malloc(sizeof(int) * NUMBER);
 
   int selection = -1;
-  while (selection < 0 || selection > 3) {
+  if (E_sortClass == NONE_SORT_CLASS) {
 	 system("clear");
-	 printf("0: Selection Sort\n");
-	 printf("1: Bubble Sort\n");
-	 printf("2: Quick Sort\n");
-	 printf("3: Radix Sort\n");
-	 printf("Type Sort Algorythm: : ");
-	 scanf("%d", &selection);
+	 while (selection < 0 || selection > 3) {
+		system("clear");
+		printf("0: Selection Sort\n");
+		printf("1: Bubble Sort\n");
+		printf("2: Quick Sort\n");
+		printf("3: Radix Sort\n");
+		printf("Type Sort Algorythm: : ");
+		scanf("%d", &selection);
+	 }
+	 E_sortClass = selection;
   }
-  E_sortClass = selection;
 
-  selection = -1;
-  while (selection < 0 || selection > 1) {
+  if (E_sortType == NONE_SORT_TYPE) {
 	 system("clear");
-	 printf("0: Ascending\n");
-	 printf("1: Descending\n");
-	 printf("Type Sort Order: ");
-	 scanf("%d", &selection);
+	 selection = -1;
+	 while (selection < 0 || selection > 1) {
+		system("clear");
+		printf("0: Ascending\n");
+		printf("1: Descending\n");
+		printf("Type Sort Order: ");
+		scanf("%d", &selection);
+	 }
+	 E_sortType = selection;
   }
-  E_sortType = selection;
 
-  selection = -1;
-  while (selection < 0 || selection > 4) {
+  if (E_dataType == NONE_DATA_TYPE) {
 	 system("clear");
-	 printf("0: OrderedAscending\n");
-	 printf("1: OrderedDescending\n");
-	 printf("2: Random\n");
-	 printf("3: PartiallyOrderedAscending\n");
-	 printf("4: PartiallyOrderedDescending\n");
-	 printf("Type Data Type: ");
-	 scanf("%d", &selection);
+	 selection = -1;
+	 srand((unsigned int) time(NULL));
+	 while (selection < 0 || selection > 4) {
+		system("clear");
+		printf("0: OrderedAscending\n");
+		printf("1: OrderedDescending\n");
+		printf("2: Random\n");
+		printf("3: PartiallyOrderedAscending\n");
+		printf("4: PartiallyOrderedDescending\n");
+		printf("Type Data Type: ");
+		scanf("%d", &selection);
+	 }
+	 E_dataType = selection;
+	 system("clear");
+
+	 if (E_dataType == 3 || E_dataType == 4) {
+		printf("Type sort ratio(range[0.0 ~ 1.0]): ");
+		scanf("%lf", &RATIO);
+		system("clear");
+	 }
+	 generateArray();
   }
-  E_dataType = selection;
   system("clear");
-
-  if (E_dataType == 3 || E_dataType == 4) {
-	 printf("Type sort ratio(range[0.0 ~ 1.0]): ");
-	 scanf("%lf", &RATIO);
-	 system("clear");
-  }
-
-  srand((unsigned int) time(NULL));
 }
 
 int* generateArray() {
@@ -199,6 +243,9 @@ int* generateArray() {
   case PARTIALLY_ORDERED_DESCENDING:
 	 result = createPartiallyOrderedData(DESCENDING, RATIO);
 	 break;
+  case NONE_DATA_TYPE:
+	 initialSetting();
+	 break;
   default:
 	 result = NULL;
   }
@@ -208,29 +255,33 @@ int* generateArray() {
 void sort() {
   ResultSet result;
   switch(E_sortClass) {
-  case SELECTION_SORT: {
+  case SELECTION_SORT: 
 	 result = selectionSort(E_sortType);
 	 break;
-  }
-  case BUBBLE_SORT: {
+  case BUBBLE_SORT: 
 	 result = bubbleSort(E_sortType);
 	 break;
-  }
-  case QUICK_SORT: {
+  case QUICK_SORT:
 	 result = quickSort(E_sortType, NULL, 0, NUMBER - 1, 0, 0);
 	 break;
-  }
-  case RADIX_SORT: {
+  case RADIX_SORT:
 	 result = radixSort(E_sortType);
 	 break;
-  }
+  case NONE_SORT_CLASS:
+	 initialSetting();
+	 break;
   }
   showResult(result);
+  printf("\n");
+  printf("Enterで確認画面を終了");
+  getchar();
+  getchar();
+  system("clear");
 }
 
-int* createOrderedData(SortType type) {
+int* createOrderedData(SortType E_sortType) {
   array = createRandomData();
-  array = selectionSort(type).result;
+  array = selectionSort(E_sortType).result;
   return array;
 }
 
@@ -241,9 +292,9 @@ int* createRandomData() {
   return array;
 }
 
-int* createPartiallyOrderedData(SortType type, double ratio) {
-  createOrderedData(type);
-  switch (type) {
+int* createPartiallyOrderedData(SortType E_sortType, double ratio) {
+  createOrderedData(E_sortType);
+  switch (E_sortType) {
   case ASCENDING:
 	 for (int i = NUMBER - (NUMBER * ratio); i < NUMBER; i++) {
 		array[i] = rand() % NUMBER + 1;
@@ -254,11 +305,13 @@ int* createPartiallyOrderedData(SortType type, double ratio) {
 		array[i] = rand() % NUMBER + 1;
 	 }
 	 break;
+  case NONE_SORT_TYPE:
+	 exit(-4);
   }
   return array;
 }
 
-ResultSet selectionSort(SortType type) {
+ResultSet selectionSort(SortType E_sortType) {
   int* num = (int*) malloc(sizeof(int) * NUMBER);
   num = copyArray(array, num);
   int compareCount = 0;
@@ -267,7 +320,7 @@ ResultSet selectionSort(SortType type) {
 	 int min = num[i];
 	 int k = i;
 	 for (int j = i + 1; j < NUMBER; j++) {
-		switch (type) {
+		switch (E_sortType) {
 		case ASCENDING:
 		  if (num[j] < min) {
 			 min = num[j];
@@ -282,7 +335,7 @@ ResultSet selectionSort(SortType type) {
 			 compareCount++;
 		  }
 		  break;
-		default:
+		case NONE_SORT_TYPE:
 		  exit(-1);
 		}
 	 }
@@ -293,14 +346,14 @@ ResultSet selectionSort(SortType type) {
   return result;
 }
 
-ResultSet bubbleSort(SortType type) {
+ResultSet bubbleSort(SortType E_sortType) {
   int* num = (int*) malloc(sizeof(int) * NUMBER);
   num = copyArray(array, num);
   int compareCount = 0;
   int swapCount = 0;
   for (int i = 0; i < NUMBER - 1; i++) {
 	 for (int j = NUMBER - 1; j > i; j--) {
-		switch (type) {
+		switch (E_sortType) {
 		case ASCENDING:
 		  if (num[j - 1] > num[j]) {
 			 swapElement(num, j - 1, j);
@@ -315,7 +368,7 @@ ResultSet bubbleSort(SortType type) {
 			 swapCount++;
 		  }
 		  break;
-		default:
+		case NONE_SORT_TYPE:
 		  exit(-2);
 		}
 	 }
@@ -324,7 +377,7 @@ ResultSet bubbleSort(SortType type) {
   return result;
 }
 
-ResultSet quickSort(SortType type, int* num, int left, int right, int compareCount, int swapCount) {
+ResultSet quickSort(SortType E_sortType, int* num, int left, int right, int compareCount, int swapCount) {
   if (num == NULL) {
 	 num = (int*) malloc(sizeof(int) * NUMBER);
 	 num = copyArray(array, num);
@@ -333,7 +386,7 @@ ResultSet quickSort(SortType type, int* num, int left, int right, int compareCou
   int L = left;
   int R = right;
   while (1) {
-	 switch (type) {
+	 switch (E_sortType) {
 	 case ASCENDING:
 		while (num[L] < base) {
 		  compareCount++;
@@ -354,7 +407,7 @@ ResultSet quickSort(SortType type, int* num, int left, int right, int compareCou
 		  R--;
 		}
 		break;
-	 default:
+	 case NONE_SORT_TYPE:
 		exit(-3);
 	 }
 	 if (L >= R) {
@@ -367,10 +420,10 @@ ResultSet quickSort(SortType type, int* num, int left, int right, int compareCou
 	 R--;
   }
   if (left < L - 1) {
-	 quickSort(type, num, left, right - 1, compareCount, swapCount);
+	 quickSort(E_sortType, num, left, right - 1, compareCount, swapCount);
   }
   if (R + 1 < right) {
-	 quickSort(type, num, R + 1, right, compareCount, swapCount);
+	 quickSort(E_sortType, num, R + 1, right, compareCount, swapCount);
   }
   ResultSet result = {E_sortClass, E_sortType, E_dataType, compareCount, swapCount, num};
   compareCount = -1;
@@ -378,7 +431,7 @@ ResultSet quickSort(SortType type, int* num, int left, int right, int compareCou
   return result;
 }
 
-ResultSet radixSort(SortType type) {
+ResultSet radixSort(SortType E_sortType) {
   int* num = (int*) malloc(sizeof(int) * NUMBER);
   int compareCount = -1;
   int swapCount = -1;
@@ -392,7 +445,7 @@ ResultSet radixSort(SortType type) {
 		radArray[i] = (num[i] / currentDigit) % 10;
 	 }
 	 int k = 0;
-	 switch (type) {
+	 switch (E_sortType) {
 	 case ASCENDING:
 		for (int i = 0; i <= 9; i++) {
 		  for (int j = 0; j < NUMBER; j++) {
@@ -413,6 +466,8 @@ ResultSet radixSort(SortType type) {
 		  }
 		}
 		break;
+	 case NONE_SORT_TYPE:
+		exit(-5);
 	 }
 	 for (int i = 0; i < NUMBER; i++) {
 		num[i] = temp[i];
@@ -449,6 +504,9 @@ void showResult(ResultSet result) {
   printf("ソートの種類: %s\n", sortClass(result.E_sortClass));
   printf("ソートのタイプ: %s\n", sortType(result.E_sortType));
   printf("ソートする配列のデータ: %s\n", dataType(result.E_dataType));
+  if (E_dataType == PARTIALLY_ORDERED_ASCENDING || E_dataType == PARTIALLY_ORDERED_DESCENDING) {
+	 printf("ソートされている割合: %.1f\n", RATIO);
+  }
   printf("\n");
   if (result.compareCount == -1) {
 	 printf("比較回数: - 回\n");
@@ -456,6 +514,22 @@ void showResult(ResultSet result) {
 	 printf("比較回数: %d 回\n", result.compareCount);
   }
   printf("交換回数: %d 回\n", result.swapCount);
+}
+
+void showSettings() {
+  printf("-----現在のデータ形式-----\n");
+  printf("配列の長さ: ");
+  if (NUMBER == -1) {
+	 printf("選択なし\n");
+  } else {
+	 printf("%d\n", NUMBER);
+  }
+  printf("データ形式: %s\n", dataType(E_dataType));
+  if (E_dataType == PARTIALLY_ORDERED_ASCENDING || E_dataType == PARTIALLY_ORDERED_DESCENDING) {
+	 printf("ソートされている割合: %.1f\n", RATIO);
+  }
+  showArray(array);
+  printf("--------------------------\n");
 }
 
 int* swapElement(int* array1, int p1, int p2) {
