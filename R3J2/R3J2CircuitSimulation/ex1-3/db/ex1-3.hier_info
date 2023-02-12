@@ -1,0 +1,17 @@
+|ex1-3
+F1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+b1 => inst10.IN0
+b1 => inst11.IN0
+b1 => inst12.IN1
+b1 => inst1.IN1
+b1 => inst16.IN0
+b0 => inst10.IN1
+b0 => inst.IN1
+b0 => inst11.IN1
+b0 => inst1.IN0
+b0 => inst16.IN1
+F2 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+F0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+F3 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+

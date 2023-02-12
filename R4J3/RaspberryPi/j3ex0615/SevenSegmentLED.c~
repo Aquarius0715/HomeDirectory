@@ -1,0 +1,23 @@
+#include <wiringPi.h?
+
+typedef enum {
+  A  = 4,
+  B  = 5,
+  C  = 6,
+  D  = 12,
+  E  = 13,
+  F  = 16,
+  G  = 17,
+  DP = 19
+} Pin;
+
+int main(void) {
+  /** init wirinpPi **/
+  if (wiringPiSetupGpio() == -1) {
+    return 1;
+  }
+  /** Set GPIO pins output mode **/
+  for (Pin = A; Pin <= DP; Pin++) {
+    pinMode(Pin, OUTPUT);
+  }
+}

@@ -1,0 +1,284 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <unistd.h>
+
+
+#define INTEREST_RATE 2
+#define MAXIMUM_YEAR 5
+#define MINUMUM_BALANCE 100
+
+
+typedef struct Account {
+  char Name[64+1];
+  char Number[7+1];
+  char Date[8+1];
+  long TimeStamp;
+  char Balance[20+1];
+  struct Account *NextAccount;
+} Account;
+
+
+Account *FirstAccount = NULL;
+int ACCOUNT_SIZE = 0;
+
+
+void AddAccount();
+void DisplayAccount();
+void DisplayAccountASC();
+void AddInterestRate(double Rate);
+void RemoveAccount(int Year, int Balance);
+
+
+int main(void) {
+  char Options;
+  while (1)  {
+    printf("=========================Select Options=========================\n");
+    printf("1: Add Acount\n");
+    printf("2: Display AccountList\n");
+    printf("3: Display Account Ascending Order\n");
+    printf("4: Add Interest Rate The Account\n");
+    printf("5: Remove Account 5Years Older And Under 100 JPY Balance\n");
+    printf("0: Quit\n");
+    printf("=========================Select Options=========================\n");
+    scanf("%s", &Options);
+    switch (Options) {
+    case '1':
+      AddAccount();
+      break;
+    case '2':
+      DisplayAccount();
+      break;
+    case '3':
+      DisplayAccountASC();
+      break;
+    case '4':
+      AddInterestRate(INTEREST_RATE);
+      break;
+    case '5':
+      RemoveAccount(MAXIMUM_YEAR, MINUMUM_BALANCE);
+      break;
+    case '0':
+      printf("Exit AccountManagementSystem.\n");
+      return 0;
+    default:
+      printf("Invalid Options.\n");
+      break;
+    }
+    sleep(3);
+  }
+}
+
+
+void AddAccount() {
+  Account *NewAccount;
+  char buffer[4 + 1];
+  long TimeStamp = 0;
+  NewAccount = (Account *) malloc(sizeof(Account));
+  printf("Enter Details of New Account:\n");
+  printf("AccountName   (Without Space)                   : ");
+  scanf("%s", NewAccount -> Name);
+  printf("AccountNumber (7 digits)                        : ");
+  scanf("%s", NewAccount -> Number);
+  printf("ResisterDate  (ex: 2000,September 6 -> 20000906): ");
+  scanf("%s", NewAccount -> Date);
+  printf("AccountBalance                                  : ");
+  scanf("%s", NewAccount -> Balance);
+  strncpy(buffer, NewAccount -> Date, 4);
+  buffer[4] = '\0';
+  TimeStamp += (atoi(buffer) - 1970) * 365 * 24 * 60 * 60;
+  strncpy(buffer, NewAccount -> Date + 4, 2);
+  buffer[2] = '\0';
+  TimeStamp += atoi(buffer) * 30 * 24 * 60 * 60;
+  strncpy(buffer, NewAccount -> Date + 2, 2);
+  buffer[2] = '\0';
+  TimeStamp += atoi(buffer) * 24 * 60 * 60;
+  NewAccount -> TimeStamp = TimeStamp;
+  NewAccount -> NextAccount = NULL;
+  if (FirstAccount == NULL) {
+    FirstAccount = NewAccount;
+  } else {
+    Account *LastAccount;
+    LastAccount = FirstAccount;
+    while (LastAccount -> NextAccount != NULL) {
+      LastAccount = LastAccount -> NextAccount;
+    }
+    LastAccount -> NextAccount = NewAccount;
+  }
+  ACCOUNT_SIZE += 1;
+  printf("Add %s's Account Successfully.\n", NewAccount -> Name);
+}
+
+
+void DisplayAccount() {
+  Account *DisplayIt;
+  int i, len, count = 0;;
+  if (FirstAccount == NULL) {
+    printf("Not Esists Account in Accounts List\n");
+  } else {
+    DisplayIt = FirstAccount;
+    while (1) {
+      printf("===================== %s's Account =====================\n", DisplayIt -> Name);
+      printf("AccountName   : %s\n", DisplayIt -> Name);
+      printf("AccountNumber : ");
+      for (i = 0; i < 7; i++) {
+	printf("%c", DisplayIt -> Number[i]);
+	if (i == 2) {
+	  printf("-");
+	}
+      }
+      printf("\n");
+      printf("AccountBalance: ");
+      for (i = 1; i <= (len = strlen(DisplayIt -> Balance)); i++) {
+	printf("%c", DisplayIt -> Balance[i - 1]);
+	if ((len - i) % 3 == 0 && DisplayIt -> Balance[i + 1] != '\0') {
+	  printf(",");
+	}
+      }
+      printf("\n");
+      printf("ResisterDate  : ");
+      for (i = 0; i < 8; i++) {
+	printf("%c", DisplayIt -> Date[i]);
+	if (i == 3 || i == 5) {
+	  printf("/");
+	}
+      }
+      printf("\n");
+      printf("===================== %s's Account =====================\n\n", DisplayIt -> Name);
+      count++;
+      if (DisplayIt -> NextAccount != NULL) {
+	DisplayIt = DisplayIt -> NextAccount;
+      } else {
+	break;
+      }
+    }
+    printf("FindOut %d Accounts.\n", count);
+  }
+}
+
+
+void DisplayAccountASC() {
+  Account *DisplayIt, *Minimum, *Temp, *Accounts[ACCOUNT_SIZE];
+  int i, j, k, n, len;
+  if (FirstAccount == NULL) {
+    printf("Not Exists Account in Accounts List\n");
+  } else {
+    DisplayIt = FirstAccount;
+    for (i = 0; 1; i++) {
+      Accounts[i] = DisplayIt;
+      if (DisplayIt -> NextAccount != NULL) {
+	DisplayIt = DisplayIt -> NextAccount;
+      } else {
+	break;
+      }
+    }
+    for (i = 0; i < ACCOUNT_SIZE - 1; i++) {
+      Minimum = Accounts[i];
+      k = i;
+      for (j = i; j < ACCOUNT_SIZE; j++) {
+	if (Accounts[j] -> TimeStamp > Minimum -> TimeStamp) {
+	  Minimum = Accounts[j];
+	  k = j;
+	}
+      }
+      Temp = Accounts[i];
+      Accounts[i] = Accounts[k];
+      Accounts[k] = Temp;
+    }
+    for (i = 0; i < ACCOUNT_SIZE; i++) {
+      printf("===================== %s's Account ====================\n", Accounts[i] -> Name);
+      printf("AccountName   : %s\n", Accounts[i] -> Name);
+      printf("AccountNumber : ");
+      for (j = 0; j < 7; j++) {
+	printf("%c", Accounts[i] -> Number[j]);
+	if (j == 2) {
+	  printf("-");
+	}
+      }
+      printf("\n");
+      printf("AccountBalance: ");
+      for (j = 1; j <= (len = strlen(Accounts[i] -> Balance)); j++) {
+	printf("%c", Accounts[i] -> Balance[j - 1]);
+	if ((len - j) % 3 == 0 && Accounts[i] -> Balance[j + 1] != '\0') {
+	  printf(",");
+	}
+      }
+      printf("\n");
+      printf("ResisterDate  : ");
+      for (j = 0; j < 8; j++) {
+	printf("%c", Accounts[i] -> Date[j]);
+	if (j == 3 || j == 5) {
+	  printf("/");
+	}
+      }
+      printf("\n");
+      printf("===================== %s's Account =====================\n\n", Accounts[i] -> Name);
+    }
+  }
+}
+
+
+void AddInterestRate(double Rate) {
+  Account *CurrentAccount;
+  int i, j, Count = 0, len;
+  if (FirstAccount == NULL) {
+    printf("Not Exists Account in Accounts List\n");
+  } else {
+    CurrentAccount = FirstAccount;
+    while (1) {
+      if (time(NULL) - CurrentAccount -> TimeStamp >= 1 * 365 * 24 * 60 * 60) {
+	printf("%s's AccountBalance ", CurrentAccount -> Name);
+	for (j = 1; j <= (len = strlen(CurrentAccount -> Balance)); j++) {
+	  printf("%c", CurrentAccount -> Balance[j - 1]);
+	  if ((len - j) % 3 == 0 && CurrentAccount -> Balance[j + 1] != '\0') {
+	    printf(",");
+	  }
+	}
+	printf(" -> ");
+	for (i = 0; i < (int) ((time(NULL) - CurrentAccount -> TimeStamp) / (long) (1 * 365 * 24 * 60 * 60)); i++) {
+	  sprintf(CurrentAccount -> Balance, "%ld", (long) (atol(CurrentAccount -> Balance) * 1.02));
+	}
+	for (j = 1; j <= (len = strlen(CurrentAccount -> Balance)); j++) {
+	  printf("%c", CurrentAccount -> Balance[j - 1]);
+	  if ((len - j) % 3 == 0 && CurrentAccount -> Balance[j + 1] != '\0') {
+	    printf(",");
+	  }
+	}
+	printf("\n");
+	Count += 1;
+      }
+      if (CurrentAccount -> NextAccount != NULL) {
+	CurrentAccount = CurrentAccount -> NextAccount;
+      } else {
+	printf("Add Interest %d Accounts.\n", Count);
+	break;
+      }
+    }
+  }
+}
+
+
+void RemoveAccount(int Year, int Balance) {
+  Account *CurrentAccount, *JustBeforeCurrentAccount;
+  int Count = 0;
+  CurrentAccount = FirstAccount;
+  JustBeforeCurrentAccount = NULL;
+  while (CurrentAccount != NULL) {
+    if (atoi(CurrentAccount -> Balance) <= Balance) {
+      if (time(NULL) - (CurrentAccount -> TimeStamp) >= Year * 365 * 24 * 60 * 60) {
+	if (CurrentAccount == FirstAccount) {
+	  FirstAccount = FirstAccount -> NextAccount;
+	} else {
+	  JustBeforeCurrentAccount -> NextAccount = CurrentAccount -> NextAccount;
+	}
+	free(CurrentAccount);
+	Count += 1;
+      }
+    }
+    JustBeforeCurrentAccount = CurrentAccount;
+    CurrentAccount = CurrentAccount -> NextAccount;
+  }
+  printf("Removed %d Accounts.\n", Count);
+  ACCOUNT_SIZE -= Count;
+}

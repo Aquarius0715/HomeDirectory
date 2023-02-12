@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+int calc_second(int hour, int minute, int second) {
+
+  return hour * 3600 + minute * 60 + second;
+  
+}
+					    
+
+int main () {
+
+    int hour, minute, second;
+
+    while (1) {
+      
+    printf("hours: "); scanf("%d", &hour);
+    
+    if (hour >= 0 && hour < 24) {
+      
+      break;
+      
+    } else {
+      
+      printf("Number error!\n");
+      
+      continue;
+      
+      }
+    }
+
+    while (1) {
+
+      printf("minutes: "); scanf("%d", &minute);
+
+      if (minute >= 0 && minute < 60) {
+
+	break;
+	
+      } else {
+
+	printf("Number error!\n");
+
+	continue;
+	
+      }
+    }
+
+    while (1) {
+
+      printf("seconds: "); scanf("%d", &second);
+
+      if (second >= 0 && second < 60) {
+
+	break;
+	
+      } else {
+
+	printf("Number error!\n");
+
+	continue;
+	
+      }
+    }
+
+    printf("[Result] %dH %dM %dS Converted to Seconds %d\n", hour, minute, second, calc_second(hour, minute, second));
+  
+  return 0;
+  
+}

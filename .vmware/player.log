@@ -1,0 +1,6 @@
+<Action><Time>1650415505</Time><Act>ViewMode</Act><ID>5b1126c2-8880-2491-7222-f2e9bf3f7950</ID><Detail>Console</Detail></Action>
+<Action><Time>1650415505</Time><Act>PowerOnVM</Act><ID>5b1126c2-8880-2491-7222-f2e9bf3f7950</ID><Detail>windows9</Detail></Action>
+<Action><Time>1650415505</Time><Act>HardwareVersion</Act><ID>5b1126c2-8880-2491-7222-f2e9bf3f7950</ID><Detail>11</Detail></Action>
+<Action><Time>1650415505</Time><Act>EnableVPMC</Act><ID>5b1126c2-8880-2491-7222-f2e9bf3f7950</ID><Detail>No</Detail></Action>
+<Action><Time>1650415505</Time><Act>LocalVM</Act><ID>5b1126c2-8880-2491-7222-f2e9bf3f7950</ID><Detail>PowerOn</Detail></Action>
+<Action><Time>1650415571</Time><Act>FullOSName</Act><ID>5b1126c2-8880-2491-7222-f2e9bf3f7950</ID><Detail>Windows 10 Enterprise, 32-bit (Build 19042.1586)</Detail></Action>

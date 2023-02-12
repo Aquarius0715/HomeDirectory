@@ -1,0 +1,137 @@
+Xsession: X session started for j20413 at 2022年  4月 21日 木曜日 11:17:11 JST
+WARNING: tempfile is deprecated; consider using mktemp instead.
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/42013/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/student/j20/j20413/.Xauthority
+localuser:j20413 being added to access control list
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting USER=j20413
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting HOME=/home/student/j20/j20413
+dbus-update-activation-environment: setting DESKTOP_SESSION=xfce
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/42013/bus
+dbus-update-activation-environment: setting IM_CONFIG_PHASE=1
+dbus-update-activation-environment: setting LOGNAME=j20413
+dbus-update-activation-environment: setting GTK_IM_MODULE=ibus
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/42013
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting LANG=ja_JP.UTF-8
+dbus-update-activation-environment: setting XDG_CURRENT_DESKTOP=XFCE
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=xfce
+dbus-update-activation-environment: setting XAUTHORITY=/home/student/j20/j20413/.Xauthority
+dbus-update-activation-environment: setting XMODIFIERS=@im=ibus
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/j20413
+dbus-update-activation-environment: setting SHELL=/bin/zsh
+dbus-update-activation-environment: setting GDMSESSION=xfce
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/42013/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting QT_IM_MODULE=ibus
+dbus-update-activation-environment: setting PWD=/home/student/j20/j20413
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+dbus-update-activation-environment: setting CLUTTER_IM_MODULE=ibus
+/usr/bin/startxfce4: X server already running on display :0
+/usr/bin/iceauth:  creating new authority file /run/user/42013/ICEauthority
+xfce4-session-Message: 11:17:14.474: SSH authentication agent is already running
+gpg-agent: gpg-agentは既に実行されています - 新しいものをスタートさせません
+
+(xfce4-session:2410): xfce4-session-WARNING **: 11:17:17.419: Unable to launch "xfce4-volumed" (specified by autostart/xfce4-volumed.desktop): 子プロセス“xfce4-volumed”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+
+(xfce4-session:2410): xfce4-session-WARNING **: 11:17:17.428: Unable to launch "/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1" (specified by autostart/polkit-gnome-authentication-agent-1.desktop): 子プロセス“/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+Tracker-Message: 11:17:17.434: Set scheduler policy to SCHED_IDLE
+Tracker-Message: 11:17:17.434: Setting priority nice level to 19
+Tracker-Message: 11:17:17.437: Set scheduler policy to SCHED_IDLE
+Tracker-Message: 11:17:17.437: Setting priority nice level to 19
+
+(xfce4-session:2410): xfce4-session-WARNING **: 11:17:17.444: Unable to launch "system-config-printer-applet" (specified by autostart/print-applet.desktop): 子プロセス“system-config-printer-applet”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+
+(xfce4-session:2410): xfce4-session-WARNING **: 11:17:17.462: Unable to launch "zeitgeist-datahub" (specified by autostart/zeitgeist-datahub.desktop): 子プロセス“zeitgeist-datahub”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+
+** (xiccd:2685): WARNING **: 11:17:17.515: EDID is empty
+(uint32 2,)
+
+(tracker-miner-fs:2664): Tracker-CRITICAL **: 11:17:17.725: Could not request DBus name 'org.freedesktop.Tracker1.Miner.Files': D-Bus service name:'org.freedesktop.Tracker1.Miner.Files' is already taken, perhaps the application is already running?
+
+(tracker-extract:2666): Tracker-CRITICAL **: 11:17:17.759: Could not request DBus name 'org.freedesktop.Tracker1.Miner.Extract': D-Bus service name:'org.freedesktop.Tracker1.Miner.Extract' is already taken, perhaps the application is already running?
+
+(xfce4-panel:2615): garcon-CRITICAL **: 11:17:17.902: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2615): garcon-CRITICAL **: 11:17:17.906: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2615): garcon-CRITICAL **: 11:17:17.909: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:2615): garcon-CRITICAL **: 11:17:17.913: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(wrapper-2.0:2719): Gtk-WARNING **: 11:17:18.685: Negative content width -1 (allocation 1, extents 1x1) while allocating gadget (node button, owner XfceArrowButton)
+kdeconnect.core: Too many remembered identities, ignoring "_1d33c269_ecc8_4702_80d6_400c05566da8_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_52ba1ec3_f32e_4468_97c6_3035db3d4efc_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_69111f6e_2ccb_4774_b027_64984bd2c510_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_9f80e4dc_7950_453e_9c07_03001b57160a_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_16fb6f36_3756_4972_9b58_412f8950411d_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_7399948d_34d1_4158_8d56_499c546ec1c5_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_eb19fb11_b566_475d_8184_3531aad64f23_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_ba6266a6_5e8b_4c58_b169_af9a71de8c67_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_e832eb45_48d9_4e66_aa8d_c6d6fb846baf_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_a48b8463_bc9c_405b_acc8_416aebd44a59_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_94ab626e_041d_4855_aaf7_34a00d667df5_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_2501b17f_2676_460c_b3ed_c0e708f3b79a_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_85295857_b804_4c3a_86b1_99d1ca9e70ab_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_224cb89b_ad0e_4162_8304_d973dadff890_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_1957719e_17e9_4a6f_bdd3_4d93993c079e_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_ec2c149b_46d1_4f6a_b6a3_2046e41dc014_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_8a611ac6_40e4_4029_9d9b_80c48053bf89_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_a278324f_b49b_4f02_88d2_851860b8c0cb_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_b5e9f1e8_59a1_426c_90cf_fe4a551cbc64_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_df4bdcc8_f570_446e_83e7_2713deb45c3d_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_1de8e94e_aadc_4d14_b04f_48a24a4f5f03_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_82abb550_a441_4444_82d8_9a8031690b45_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_7b4a44b5_37f3_4e44_a3c1_2c4af55dd6b4_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_f4b06b2e_4248_4f8d_9565_170b9b234e2c_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_6f36ca8d_1996_480d_9ad5_eaf5e2248e7f_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_e5d50196_3b51_4635_a7a5_356f6004b54b_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_ccebbfab_84d1_433f_b8b3_d8f5e00cfb59_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_3acc90c0_8c43_4b6e_9011_a43f85934f6f_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_fc9467c5_04f5_45fe_ab25_f0e401eef019_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_5509877f_0bd1_4dd7_9469_2525b55be113_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_84a00b96_8ef6_40cf_8370_03601f2614c7_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_2b4dbe7e_d3cf_4f06_9412_4b9ac84a9855_" received via TCP
+kdeconnect.core: Too many remembered identities, ignoring "_65043d9f_273a_4c00_871b_b9d4a718211e_" received via TCP
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.142")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.184")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.115")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.142")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.140")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.125")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.135")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.120")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.115")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.108")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.154")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.131")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.11")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.113")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.129")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.138")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.111")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.148")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.103")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.126")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.119")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.127")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.139")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.3.182")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.146")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.117")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.125")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.118")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.144")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.137")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.128")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.122")
+kdeconnect.core: LanLinkProvider/newConnection: Host timed out without sending any identity. QHostAddress("::ffff:172.22.4.102")
+X connection to :0.0 broken (explicit kill or server shutdown).

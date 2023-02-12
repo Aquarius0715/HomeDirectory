@@ -1,0 +1,55 @@
+VNC(R) Viewer 6.20.529 (r42646) x64 (May 29 2020 12:30:13)
+Copyright (C) 2002-2020 RealVNC Ltd.
+RealVNC and VNC are trademarks of RealVNC Ltd and are protected by trademark
+registrations and/or pending trademark applications in the European Union,
+United States of America and other jurisdictions.
+Protected by UK patent 2481870; US patent 8760366; EU patent 2652951.
+See https://www.realvnc.com for information on VNC.
+For third party acknowledgements see:
+https://www.realvnc.com/docs/6/foss.html
+OS: Debian GNU/Linux 11, Linux 5.16.0, amd64
+<14> 2022-04-26T23:59:06.769Z j4f146 vncviewer[2126]: AbComms: Listening on /tmp/.vnc-42013/vncviewer.AbComms
+<13> 2022-04-26T23:59:06.769Z j4f146 vncviewer[2126]: AbApp: started
+<14> 2022-04-26T23:59:06.798Z j4f146 vncviewer[2126]: AbModuleHosted: Getting CloudConfig.pkg from built-in resource
+<11> 2022-04-26T23:59:06.955Z j4f146 vncviewer[2126]: VendorConfig: Error in Certificate "CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R2": X.509 Error: Certificate expired
+<14> 2022-04-26T23:59:06.982Z j4f146 vncviewer[2126]: AbModuleHosted: Using business identifier 7206bac1-1694-4be3-8b80-a0fe6646b621
+<14> 2022-04-26T23:59:07.010Z j4f146 vncviewer[2126]: GoogleAnalytics: X.509 Error: Certificate expired
+<14> 2022-04-26T23:59:42.588Z j4f146 vncviewer[2126]: Child: 2406: CModuleHosted: Getting CloudConfig.pkg from built-in resource
+<11> 2022-04-26T23:59:42.588Z j4f146 vncviewer[2126]: Child: 2406: VendorConfig: Error in Certificate "CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R2": X.509 Error: Certificate expired
+<14> 2022-04-26T23:59:42.588Z j4f146 vncviewer[2126]: Child: 2406: CModuleHosted: Using business identifier 3f1b3296-48f8-45d3-9ed8-40a6e84d1bf9
+<14> 2022-04-26T23:59:42.588Z j4f146 vncviewer[2126]: Child: 2406: CModuleCtrlComms: Listening on /tmp/.vnc-42013/vncviewer.CtrlComms.2406
+<14> 2022-04-26T23:59:42.588Z j4f146 vncviewer[2126]: Child: 2406: GoogleAnalytics: X.509 Error: Certificate expired
+<13> 2022-04-26T23:59:42.588Z j4f146 vncviewer[2126]: Child: 2406: CSession: Connecting to 172.22.5.112 (Chooser for Direct UDP/Direct TCP via proxy settings)
+<11> 2022-04-27T00:00:14.098Z j4f146 vncviewer[2126]: Child: 2406: CSession: connection error: Connection timed out (110)
+<13> 2022-04-27T00:00:14.098Z j4f146 vncviewer[2126]: Child: 2406: CConnection: close: [System-110] Timed out waiting for a response from the computer
+<14> 2022-04-27T00:03:23.225Z j4f146 vncviewer[2126]: Child: 3103: CModuleHosted: Getting CloudConfig.pkg from built-in resource
+<11> 2022-04-27T00:03:23.225Z j4f146 vncviewer[2126]: Child: 3103: VendorConfig: Error in Certificate "CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R2": X.509 Error: Certificate expired
+<14> 2022-04-27T00:03:23.225Z j4f146 vncviewer[2126]: Child: 3103: CModuleHosted: Using business identifier 79de6933-17a7-4b69-b058-38e2a06be8e9
+<14> 2022-04-27T00:03:23.225Z j4f146 vncviewer[2126]: Child: 3103: CModuleCtrlComms: Listening on /tmp/.vnc-42013/vncviewer.CtrlComms.3103
+<14> 2022-04-27T00:03:23.225Z j4f146 vncviewer[2126]: Child: 3103: GoogleAnalytics: X.509 Error: Certificate expired
+<13> 2022-04-27T00:03:23.225Z j4f146 vncviewer[2126]: Child: 3103: CSession: Connecting to 172.22.5.112 (Chooser for Direct UDP/Direct TCP via proxy settings)
+<13> 2022-04-27T00:03:23.229Z j4f146 vncviewer[2126]: Child: 3103: CSession: Beginning RFB connection to 172.22.5.112::5900 (TCP)
+<14> 2022-04-27T00:03:23.229Z j4f146 vncviewer[2126]: Child: 3103: CSession: Encryption set to 'Server'
+<14> 2022-04-27T00:03:23.292Z j4f146 vncviewer[2126]: Child: 3103: CConnection: Server supports RFB protocol version 5.0
+<14> 2022-04-27T00:03:23.292Z j4f146 vncviewer[2126]: Child: 3103: CConnection: Using RFB protocol version 5.0
+<14> 2022-04-27T00:03:23.321Z j4f146 vncviewer[2126]: Child: 3103: CProtoPostV4: Server selected cipher suite RA4_128 [0x0202] (algorithms: RSA-OAEP, ECDHE-Curve25519, SHA-256, AES-GCM-128)
+<14> 2022-04-27T00:03:23.321Z j4f146 vncviewer[2126]: Child: 3103: RsaKey: Generating RSA private key
+<14> 2022-04-27T00:03:25.424Z j4f146 vncviewer[2126]: Child: 3103: CProtoPostV4: Server offered authentication method UserPasswd(1) [required=1]
+<13> 2022-04-27T00:03:25.424Z j4f146 vncviewer[2126]: Child: 3103: CProtoPostV4: Choosing authentication method UserPasswd(1)
+<14> 2022-04-27T00:06:32.280Z j4f146 vncviewer[2126]: Child: 3103: CProtoPostV4: Server offered empty authentication list (auth completed)
+<13> 2022-04-27T00:06:32.280Z j4f146 vncviewer[2126]: Child: 3103: CConnection: Authentication successful
+<14> 2022-04-27T00:06:32.310Z j4f146 vncviewer[2126]: Child: 3103: CConnection: Peer user agent vncserver-x11/6.7.4 (LXDE; Raspbian GNU/Linux 11; Linux 5.15.32; armv7l; ja_JP)
+<14> 2022-04-27T00:06:32.693Z j4f146 vncviewer[2126]: Child: 3103: FTMsgWriter: Advertised share 1199627060, flags 0x80
+<14> 2022-04-27T00:06:32.693Z j4f146 vncviewer[2126]: Child: 3103: QualSelector: Server pixel format depth 24 (32 bpp) little-endian rgb888
+<14> 2022-04-27T00:06:32.693Z j4f146 vncviewer[2126]: Child: 3103: QualSelector: Requesting ZRLE2 encoding (line speed 0 kbit/s)
+<14> 2022-04-27T00:06:32.693Z j4f146 vncviewer[2126]: Child: 3103: QualSelector: Using pixel format depth 6 (8 bpp) rgb222
+<14> 2022-04-27T00:06:32.693Z j4f146 vncviewer[2126]: Child: 3103: QualSelector: requesting initial update
+<14> 2022-04-27T00:06:32.693Z j4f146 vncviewer[2126]: Child: 3103: ftExtension: directory '' of share 1199627060 requested to depth 0
+<14> 2022-04-27T00:06:32.693Z j4f146 vncviewer[2126]: Child: 3103: FTMsgWriter: Sent 1 filename(s), marshalled=88
+<14> 2022-04-27T00:06:32.693Z j4f146 vncviewer[2126]: Child: 3103: FTMsgWriter: Sent EOF share 1199627060
+<14> 2022-04-27T00:06:32.848Z j4f146 vncviewer[2126]: Child: 3103: QualSelector: Requesting ZRLE2 encoding (line speed 100000 kbit/s)
+<14> 2022-04-27T00:06:32.848Z j4f146 vncviewer[2126]: Child: 3103: ftExtension: 0-130 of Brother_HL_5450DN_series via VNC from j4f146 requested (compressed)
+<14> 2022-04-27T00:06:32.848Z j4f146 vncviewer[2126]: Child: 3103: QualSelector: Requesting full color (line speed 100000 kbit/s)
+<14> 2022-04-27T00:06:32.848Z j4f146 vncviewer[2126]: Child: 3103: QualSelector: Using pixel format depth 24 (32 bpp) little-endian rgb888
+<13> 2022-04-27T00:10:18.933Z j4f146 vncviewer[2126]: Child: 3103: CConnection: close: [ViewerClosed] VNC Viewer closed
+<13> 2022-04-27T00:10:22.200Z j4f146 vncviewer[2126]: AbApp: stopped

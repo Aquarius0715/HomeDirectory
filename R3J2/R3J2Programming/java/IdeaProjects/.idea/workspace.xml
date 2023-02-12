@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="660664b6-fa2f-4e4e-a0fe-b4e70023006c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/minim.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/minim.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c/AtomProjects/J2Program/j2preexam0106/sort_sample.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../c/AtomProjects/J2Program/j2preexam0106/sort_sample.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFirstGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/7.0/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/7.0/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/7.0/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/7.0/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/7.0/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/7.0/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/7.0/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/7.0/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/7.0/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.gradle/workspace-id.txt.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/classes/java/main/Level.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/classes/java/main/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/classes/java/main/Summon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/classes/java/main/data/LevelTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/classes/java/main/data/SlimeStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/classes/java/main/entities/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/classes/java/main/entities/enemies/slime/KingSlime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/classes/java/main/entities/enemies/slime/Slime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/Level.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/RPG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/Summon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/data/LevelTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/data/SlimeStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/entities/Entity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/entities/enemies/slime/KingSlime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/entities/enemies/slime/Slime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RPG/src/main/java/entities/player/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyFirstGame/MyFirstGame/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyFirstGame/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyFirstGame/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="gwbi0zwj" />
+  </component>
+  <component name="ProjectId" id="23JBY20F20dGwyb7W2WkL4uXBbV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MyFirstGame" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2700831" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/MyFirstGame" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/src/MyFirstGame/sounds" />
+      <recent name="$PROJECT_DIR$/src/MyFirstGame/blocks" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyFirstGame.src.Main" />
+      <module name="MyFirstGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MyFirstGame.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="660664b6-fa2f-4e4e-a0fe-b4e70023006c" name="Default Changelist" comment="" />
+      <created>1641442353879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641442353879</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

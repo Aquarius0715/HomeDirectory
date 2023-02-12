@@ -1,0 +1,42 @@
+[09:53:20] GdkPixbuf-DEBUG: gdk_pixbuf_from_pixdata() called on:
+[09:53:20] GdkPixbuf-DEBUG: 	Encoding rle
+[09:53:20] GdkPixbuf-DEBUG: 	Dimensions: 24 x 24
+[09:53:20] GdkPixbuf-DEBUG: 	Rowstride: 96, Length: 1574
+[09:53:20] GdkPixbuf-DEBUG: 	Copy pixels == false
+[09:53:20] GdkPixbuf-DEBUG: gdk_pixbuf_from_pixdata() called on:
+[09:53:20] GdkPixbuf-DEBUG: 	Encoding rle
+[09:53:20] GdkPixbuf-DEBUG: 	Dimensions: 24 x 24
+[09:53:20] GdkPixbuf-DEBUG: 	Rowstride: 96, Length: 1443
+[09:53:20] GdkPixbuf-DEBUG: 	Copy pixels == false
+[09:53:20] GdkPixbuf-DEBUG: gdk_pixbuf_from_pixdata() called on:
+[09:53:20] GdkPixbuf-DEBUG: 	Encoding rle
+[09:53:20] GdkPixbuf-DEBUG: 	Dimensions: 24 x 24
+[09:53:20] GdkPixbuf-DEBUG: 	Rowstride: 96, Length: 1159
+[09:53:20] GdkPixbuf-DEBUG: 	Copy pixels == false
+[09:55:24] * message: SMTPサーバ: info.j.kisarazu.ac.jp に接続中...
+[09:55:24] SMTP< 220 info.j.kisarazu.ac.jp ESMTP Postfix (CentOS)
+[09:55:24] ESMTP> EHLO J4F107.4f.j.kisarazu.ac.jp
+[09:55:24] ESMTP< 250-info.j.kisarazu.ac.jp
+[09:55:24] ESMTP< 250-PIPELINING
+[09:55:24] ESMTP< 250-SIZE
+[09:55:24] ESMTP< 250-VRFY
+[09:55:24] ESMTP< 250-ETRN
+[09:55:24] ESMTP< 250-STARTTLS
+[09:55:24] ESMTP< 250-ENHANCEDSTATUSCODES
+[09:55:24] ESMTP< 250-8BITMIME
+[09:55:24] ESMTP< 250-DSN
+[09:55:24] ESMTP< 250-SMTPUTF8
+[09:55:24] ESMTP< 250 CHUNKING
+[09:55:24] ** LibSylph-WARNING: [09:55:24] SMTP AUTH が利用できません
+
+[09:55:24] ** warning: SMTP AUTH が利用できません
+[09:55:24] SMTP> MAIL FROM:<j20413@j.kisarazu.ac.jp>
+[09:55:24] SMTP< 250 2.1.0 Ok
+[09:55:24] SMTP> RCPT TO:<yoshizawa@j.kisarazu.ac.jp>
+[09:55:24] SMTP< 250 2.1.5 Ok
+[09:55:24] SMTP> DATA
+[09:55:24] SMTP< 354 End data with <CR><LF>.<CR><LF>
+[09:55:24] SMTP> . (EOM)
+[09:55:25] SMTP< 250 2.0.0 Ok: queued as EDE223FEB2
+[09:55:25] SMTP> QUIT
+[09:55:25] SMTP< 221 2.0.0 Bye

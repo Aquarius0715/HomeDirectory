@@ -1,0 +1,30 @@
+VNC(R) Viewer 6.20.529 (r42646) x64 (May 29 2020 12:30:13)
+Copyright (C) 2002-2020 RealVNC Ltd.
+RealVNC and VNC are trademarks of RealVNC Ltd and are protected by trademark
+registrations and/or pending trademark applications in the European Union,
+United States of America and other jurisdictions.
+Protected by UK patent 2481870; US patent 8760366; EU patent 2652951.
+See https://www.realvnc.com for information on VNC.
+For third party acknowledgements see:
+https://www.realvnc.com/docs/6/foss.html
+OS: Debian GNU/Linux 11, Linux 5.16.0, amd64
+<14> 2022-04-27T00:13:17.881Z j4f146 vncviewer[6717]: AbComms: Listening on /tmp/.vnc-42013/vncviewer.AbComms
+<13> 2022-04-27T00:13:17.881Z j4f146 vncviewer[6717]: AbApp: started
+<14> 2022-04-27T00:13:17.881Z j4f146 vncviewer[6717]: AbModuleHosted: Getting CloudConfig.pkg from built-in resource
+<11> 2022-04-27T00:13:17.881Z j4f146 vncviewer[6717]: VendorConfig: Error in Certificate "CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R2": X.509 Error: Certificate expired
+<14> 2022-04-27T00:13:17.883Z j4f146 vncviewer[6717]: AbModuleHosted: Using business identifier 0aadc7a0-0fad-4233-86de-645e72d68aaf
+<14> 2022-04-27T00:13:17.890Z j4f146 vncviewer[6717]: GoogleAnalytics: X.509 Error: Certificate expired
+<14> 2022-04-27T01:02:11.574Z j4f146 vncviewer[6717]: Child: 14587: CModuleHosted: Getting CloudConfig.pkg from built-in resource
+<11> 2022-04-27T01:02:11.574Z j4f146 vncviewer[6717]: Child: 14587: VendorConfig: Error in Certificate "CN=GlobalSign,O=GlobalSign,OU=GlobalSign Root CA - R2": X.509 Error: Certificate expired
+<14> 2022-04-27T01:02:11.574Z j4f146 vncviewer[6717]: Child: 14587: CModuleHosted: Using business identifier 3794bfff-ebef-4f41-ae7b-88051364a7ac
+<14> 2022-04-27T01:02:11.574Z j4f146 vncviewer[6717]: Child: 14587: CModuleCtrlComms: Listening on /tmp/.vnc-42013/vncviewer.CtrlComms.14587
+<14> 2022-04-27T01:02:11.574Z j4f146 vncviewer[6717]: Child: 14587: GoogleAnalytics: X.509 Error: Certificate expired
+<13> 2022-04-27T01:02:11.574Z j4f146 vncviewer[6717]: Child: 14587: CSession: Connecting to 172.22.5.112 (Chooser for Direct UDP/Direct TCP via proxy settings)
+<13> 2022-04-27T01:02:11.580Z j4f146 vncviewer[6717]: Child: 14587: CSession: Beginning RFB connection to 172.22.5.112::5900 (TCP)
+<14> 2022-04-27T01:02:11.580Z j4f146 vncviewer[6717]: Child: 14587: CSession: Encryption set to 'Server'
+<14> 2022-04-27T01:02:11.632Z j4f146 vncviewer[6717]: Child: 14587: CConnection: Server supports RFB protocol version 5.0
+<14> 2022-04-27T01:02:11.632Z j4f146 vncviewer[6717]: Child: 14587: CConnection: Using RFB protocol version 5.0
+<14> 2022-04-27T01:02:11.649Z j4f146 vncviewer[6717]: Child: 14587: CProtoPostV4: Server selected cipher suite RA4_128 [0x0202] (algorithms: RSA-OAEP, ECDHE-Curve25519, SHA-256, AES-GCM-128)
+<14> 2022-04-27T01:02:11.740Z j4f146 vncviewer[6717]: Child: 14587: CProtoPostV4: Server offered authentication method UserPasswd(1) [required=1]
+<13> 2022-04-27T01:02:11.740Z j4f146 vncviewer[6717]: Child: 14587: CProtoPostV4: Choosing authentication method UserPasswd(1)
+<13> 2022-04-27T01:17:11.601Z j4f146 vncviewer[6717]: Child: 14587: CConnection: close: [IdleTimeout] The authentication period has timed out.

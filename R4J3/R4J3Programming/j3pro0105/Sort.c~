@@ -1,0 +1,326 @@
+/**
+	各ヘッダーのインクルード
+ */
+#include <stdio.h>   /* 各入出力に使用 */
+#include <stdlib.h>  /* 乱数生成に使用 */
+#include <time.h>    /* 乱数のシードを初期化するために使用 */
+
+
+
+/**
+	各変数、列挙の宣言
+ */
+/* ソートの種類を列挙 */
+typedef enum SortClass {
+  SELECTION_SORT,
+  BUBBLE_SORT,
+  QUICK_SORT,
+  RADIX_SORT
+} SortClass;
+
+/* 昇順か降順かを列挙 */
+typedef enum SortType {
+  ASCENDING,
+  DESCENDING
+} SortType;
+
+/* ソートするデータ形式を列挙 */
+typedef enum DataType {
+  ORDERED_ASCENDING,
+  ORDERED_DESCENDING,
+  RANDOM,
+  PARTIALLY_ORDERED_ASCENDING,
+  PARTIALLY_ORDERED_DESCENDING
+} DataType;
+
+int NUMBER= -1;           /* 配列の大きさの変数 */
+SortClass sortClass = -1; /* ソートの種類を格納する変数 */
+SortType sortType = -1;   /* 昇順か降順かを格納する変数 */
+DataType dataType = -1;   /* ソートするデータの形式を格納する変数 */
+
+int* array = NULL;        /* ソートするデータを格納するポインタ配列 */
+
+
+
+/**
+	各関数のプロトタイプ宣言
+ */
+void initialSetting();
+int* generateArray();
+int* sort();
+
+int* createOrderedData(SortType type);
+int* createRandomData();
+int* createPartiallyOrderedData(SortType type);
+
+int* selectionSort(SortType type);
+int* bubbleSort(SortType type);
+int* quickSort(SortType type, int*num, int left, int right);
+int* radixSort(SortType type);
+
+int* copyArray(int* original, int* copyTo);
+int* showArray(int* array1);
+int* swapElement(int* array1, int p1, int p2);
+int getMaxRadix(int n);
+
+
+
+/**
+	メイン関数
+ */
+int main(void) {
+  initialSetting();
+  generateArray();
+  showArray(array);
+  showArray(sort());
+  free(array);
+  return 0;
+}
+
+void initialSetting() {
+  system("clear");
+  while (NUMBER < 1) {
+	 printf("Type Array Size: ");
+	 scanf("%d", &NUMBER);
+  }
+  array = (int*) malloc(sizeof(int) * NUMBEr);
+
+  int selection = -1;
+  while (selection < 0 || selection > 3) {
+	 system("clear");
+	 printf("0: Selection Sort\n");
+	 printf("1: Bubble Sort\n");
+	 printf("2: Quick Sort\n");
+	 printf("3: Radix Sort\n");
+	 printf("Type Sort Algorythm: : ");
+	 scanf("%d", &selection);
+  }
+  sortClass = selection;
+
+  selection = -1;
+  while (selection < 0 || selection > 1) {
+	 system("clear");
+	 printf("0: Ascending\n");
+	 printf("1: Descending\n");
+	 printf("Type Sort Order: ");
+	 scanf("%d", &selection);
+  }
+  sortType = selection;
+
+  selection = -1;
+  while (selection < 0 || selection > 4) {
+	 system("clear");
+	 printf("0: OrderedAscending\n");
+	 printf("1: OrderedDescending\n");
+	 printf("2: Random\n");
+	 printf("3: PartiallyOrderedAscending\n");
+	 printf("4: PartiallyOrderedDescending\n");
+	 printf("Type Data Type: ");
+	 scanf("%d", &selection);
+  }
+  dataType = selection;
+  system("clear");
+
+  srand((unsigned int) time(NULL));
+}
+
+int* generateArray() {
+  int *result;
+  switch (dataType) {
+  case ORDERED_ASCENDING:
+	 result = createOrderedData(ASCENDING);
+	 break;
+  case ORDERED_DESCENDING:
+	 result = createOrderedData(DESCENDING);
+	 break;
+  case RANDOM:
+	 result = createRandomData();
+	 break;
+  case PARTIALLY_ORDERED_ASCENDING:
+	 result = createPartiallyOrderedData(ASCENDING);
+	 break;
+  case PARTIALLY_ORDERED_DESCENDING:
+	 result = createPartiallyOrderedData(DESCENDING);
+	 break;
+  default:
+	 result = NULL;
+  }
+  return result;
+}
+
+int* sort() {
+  int *result;
+  switch(sortClass) {
+  case SELECTION_SORT: {
+	 result = selectionSort(sortType);
+	 break;
+  }
+  case BUBBLE_SORT: {
+	 result = bubbleSort(sortType);
+	 break;
+  }
+  case QUICK_SORT: {
+	 result = quickSort(sortType, NULL, 0, NUMBER - 1);
+	 break;
+  }
+  case RADIX_SORT: {
+	 result = radixSort(sortType);
+	 break;
+  }
+  default:
+	 result = NULL;
+  }
+  return result;
+}
+
+int* createOrderedData(SortType type) {
+  array = createRandomData();
+  array = selectionSort(type);
+  return array;
+}
+
+int* createRandomData() {
+  for (int i = 0; i < NUMBER; i++) {
+	 array[i] = rand() % NUMBER + 1;
+  }
+  return array;
+}
+
+int* createPartiallyOrderedData(SortType type) {
+  return NULL;
+}
+
+int* selectionSort(SortType type) {
+  int* num = (int*) malloc(sizeof(int) * NUMBER);
+  num = copyArray(array, num);
+  for (int i = 0; i < NUMBER - 1; i++) {
+	 int min = num[i];
+	 int k = i;
+	 for (int j = i + 1; j < NUMBER; j++) {
+		switch (type) {
+		case ASCENDING:
+		  if (num[j] < min) {
+			 min = num[j];
+			 k = j;
+		  }
+		  break;
+		case DESCENDING:
+		  if (num[j] > min) {
+			 min = num[j];
+			 k = j;
+		  }
+		  break;
+		default:
+		  exit(-1);
+		}
+	 }
+	 swapElement(num, i, k);
+  }
+  return num;
+}
+
+int* bubbleSort(SortType type) {
+  int* num = (int*) malloc(sizeof(int) * NUMBER);
+  num = copyArray(array, num);
+  for (int i = 0; i < NUMBER - 1; i++) {
+	 for (int j = NUMBER - 1; j > i; j--) {
+		switch (type) {
+		case ASCENDING:
+		  if (num[j - 1] > num[j]) {
+			 swapElement(num, j - 1, j);
+		  }
+		  break;
+		case DESCENDING:
+		  if (num[j - 1] < num[j]) {
+			 swapElement(num, j - 1, j);
+		  }
+		  break;
+		default:
+		  exit(-2);
+		}
+	 }
+  }
+  return num;
+}
+
+int* quickSort(SortType type, int* num, int left, int right) {
+  if (num == NULL) {
+	 num = (int*) malloc(sizeof(int) * NUMBER);
+	 num = copyArray(array, num);
+  }
+  int base = num[(left + right) / 2];
+  int L = left;
+  int R = right;
+  while (1) {
+	 switch (type) {
+	 case ASCENDING:
+		while (num[L] < base) {
+		  L++;
+		}
+		while (base < num[R]) {
+		  R--;
+		}
+		break;
+	 case DESCENDING:
+		while (num[L] > base) {
+		  L++;
+		}
+		while (base > num[R]) {
+		  R--;
+		}
+		break;
+	 default:
+		exit(-3);
+	 }
+	 if (L >= R) {
+		break;
+	 }
+	 swapElement(num, L, R);
+	 L++;
+	 R--;
+  }
+  if (left < L - 1) {
+	 quickSort(type, num, left, right - 1);
+  }
+  if (R + 1 < right) {
+	 quickSort(type, num, R + 1, right);
+  }
+  return num;
+}
+
+int* radixSort(SortType type) {
+  
+  return NULL;
+}
+
+int* copyArray(int* original, int* copyTo) {
+  for (int i = 0; i < NUMBER; i++) {
+	 copyTo[i] = original[i];
+  }
+  return copyTo;
+}
+
+int* showArray(int* array1) {
+  for (int i = 0; i < NUMBER; i++) {
+	 printf("%d ", array1[i]);
+  }
+  printf("\n");
+  return array1;
+}
+
+int* swapElement(int* array1, int p1, int p2) {
+  int temp;
+  temp = array1[p1];
+  array1[p1] = array1[p2];
+  array1[p2] = temp;
+  return array1;
+}
+
+int getMaxRadix(int n) {
+  int radix = 1;
+  while (n != 0) {
+	 radix *= 10;
+	 n /= 10;
+  }
+  return radix;
+}

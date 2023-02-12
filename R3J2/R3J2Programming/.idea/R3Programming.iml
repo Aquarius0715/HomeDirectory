@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/rust/Shelter-SMASS/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/diesel_demo/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/rust_mysql/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rust/smass/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/rust/Shelter-SMASS/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust/diesel_demo/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust/rust_mysql/target" />
+      <excludeFolder url="file://$MODULE_DIR$/rust/smass/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,15 @@
+[1]
+ActiveTab=0
+Urls[$e]=file:///home/class/j3/network/expr/PDF/J3_nwEx_02_2022-04-21.pdf
+
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+ClassName=Shell
+ObjectName=okular::Shell#1
+State=AAAA/wAAAAD9AAAAAAAABAAAAAJyAAAABAAAAAQAAAAIAAAACPwAAAACAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+VGA-1 Window-Maximized 1024x768=true
+VGA-1 XPosition=0
+VGA-1 YPosition=55

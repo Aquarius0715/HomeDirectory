@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+typedef struct Cell {
+  int MatchScore;
+  int LeftScore;
+  int DiagonalScore;
+  int UpperScore;
+} Cell;
+
+int length(char* string);
+void createMatchingTable(int columnSize, int rowSize);
+
+char str1[] = {"ATTGC"};
+char str2[] = {"ATGC"};
+
+int main(void) {
+  Cell table[length(str1)][length(str2)];
+  return 0;
+}
+
+int length(char* string) {
+  int i = 0;
+  while (string[i] != '\0') {
+    i++;
+  }
+  return i;
+}
+
+void createMatchingTable(int columnSize, int rowSize) {
+  
+}

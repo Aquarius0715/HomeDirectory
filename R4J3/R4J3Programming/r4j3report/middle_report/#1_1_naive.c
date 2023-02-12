@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int isEqual(char* str1, char* str2);
+int len(char *len);
+
+int main(void) {
+  char str1[256];
+  char str2[256];
+  
+  scanf("%s", str1);
+  scanf("%s", str2);
+
+  int i, j;
+  int length = len(str1);
+
+  i = 0;
+  while(str2[i] != '\0') {
+    char buffer[length];
+    j = 0;
+    while (str1[j] != '\0') {
+      buffer[j] = str2[j + i];
+      j++;
+    }
+    printf("%s %s\n", str1, buffer);
+    if (isEqual(str1, buffer)) {
+      printf("一致\n");
+      return 0;
+    }
+    i++;
+  }
+  printf("不一致\n");
+  return 0;
+}
+
+int isEqual(char *str1, char *str2) {
+  int i = 0;
+  while (str1[i] != '\0' || str2[i] != '\0') {
+    if (str1[i] != str2[i]) {
+      return 0;
+    }
+    i++;
+  }
+  return 1;
+}
+
+int len(char *str) {
+  int i = 0;
+  while (str[i] != '\0') {
+    i++;
+  }
+  return i;
+}

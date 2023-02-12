@@ -1,0 +1,114 @@
+#include <stdio.h>
+
+typedef char* string;
+
+typedef struct {
+  int count;
+  string str;
+} Data;
+
+<<<<<<< HEAD
+int main(int argc, char *argv[]) {
+
+  int i;
+=======
+int equals(string s1, string s2);
+int contains(string s, Data *d);
+Data init(int count, string str);
+
+int main(int argc, char *argv[]) {
+
+  int i, idx, cnt;
+>>>>>>> 955dc6ccd6262aff27fa740c9002006a558fa59c
+  Data map[argc];
+  
+  if (argc == 1) {
+    printf("usage: %s <strings...>\n", argv[0]);
+<<<<<<< HEAD
+    printf("See you.\n");
+    return 0;
+  }
+  
+  for (i = 1; i < argc; i++) {
+    x
+  }
+
+  free(map);
+  
+  return 0;
+}
+=======
+    printf("please try again\n");
+    return 0;
+  }
+  
+  for (i = 1, cnt = 0; i < argc; i++) {
+    if (i == 1 || (idx = contains(argv[i], map)) == -1) {
+      map[cnt] = init(0, argv[i]);
+      cnt++;
+    } else {
+      map[idx].count = map[idx].count + 1;
+    }
+  }
+
+  for (i = 0; i < cnt; i++) {
+    printf("%s %d\n", map[i].str, map[i].count);
+  }
+  return 0;
+}
+
+
+/* ====================================================================== */
+/**
+ * @brief   2つの文字列が等しいかを比較
+ *
+ * @param   string s1  比較したい文字列１  string s2  比較したい文字列２
+ *
+ * @return  等しければ1, 違えば0
+ */
+/* ====================================================================== */
+int equals(string s1, string s2) {
+  int i = 0;
+  while (s1[i] != '\0' && s2[i] != '\0') {
+    if (s1[i] != s2[i]) {
+      return 0;
+    }
+    i++;
+  }
+  return 1;
+}
+
+/* ====================================================================== */
+/**                                                                                                                                           
+ * @brief   指定された文字列が存在するかを検索                                                                                      
+ *                                                
+ * @param   string s  検索したい文字列  Data *d  検索対象の配列                                                                 
+ *                                                                                                                                            
+ * @return  含まれていたら対象要素のIndex, 含まれていなかったら-1                                                                             
+ */
+/* ====================================================================== */
+int contains(string s, Data *d) {
+  int i = 0;
+  while (i < sizeof(*d) / sizeof(Data)) {
+    if (equals(s, d[i].str) == 1) {
+      return i;
+    }
+    i++;
+  }
+  return -1;
+}
+
+/* ====================================================================== */
+/**
+ * @brief   Data構造体のコンストラクタ
+ *
+ * @param   Data構造体の引数
+ *
+ * @return  Data構造体
+ */
+/* ====================================================================== */
+Data init(int count, string str) {
+  Data d = {count, str};
+  return d;
+}
+>>>>>>> 955dc6ccd6262aff27fa740c9002006a558fa59c

@@ -1,0 +1,21 @@
+2022/04/27-08:58:52.031 7a6 Reusing MANIFEST /home/student/j20/j20413/.config/Microsoft/Microsoft Teams/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/27-08:58:52.049 7a6 Recovering log #73
+2022/04/27-08:58:52.061 7a6 Reusing old log /home/student/j20/j20413/.config/Microsoft/Microsoft Teams/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/000073.log 
+2022/04/27-08:58:54.703 854 Level-0 table #81: started
+2022/04/27-08:58:54.737 854 Level-0 table #81: 401789 bytes OK
+2022/04/27-08:58:54.740 854 Delete type=0 #73
+2022/04/27-08:58:54.740 854 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/04/27-08:58:54.740 854 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x05\x06\x02\x01\x0d\x00s\x00y\x00n\x00c\x00_\x00e\x00n\x00d\x00p\x00o\x00i\x00n\x00t' @ 118955 : 1
+2022/04/27-08:58:54.740 854 Compacting 1@1 + 4@2 files
+2022/04/27-08:58:54.806 854 Generated table #82@1: 1367 keys, 2146294 bytes
+2022/04/27-08:58:54.890 854 Generated table #83@1: 8600 keys, 2166243 bytes
+2022/04/27-08:58:54.970 854 Generated table #84@1: 602 keys, 2126748 bytes
+2022/04/27-08:58:55.054 854 Generated table #85@1: 7157 keys, 1395135 bytes
+2022/04/27-08:58:55.054 854 Compacted 1@1 + 4@2 files => 7834420 bytes
+2022/04/27-08:58:55.055 854 compacted to: files[ 0 0 4 0 0 0 0 ]
+2022/04/27-08:58:55.060 854 Delete type=2 #76
+2022/04/27-08:58:55.060 854 Delete type=2 #78
+2022/04/27-08:58:55.061 854 Delete type=2 #75
+2022/04/27-08:58:55.061 854 Delete type=2 #81
+2022/04/27-08:58:55.061 854 Delete type=2 #77
+2022/04/27-08:58:55.066 854 Manual compaction at level-1 from '\x00\x05\x06\x02\x01\x0d\x00s\x00y\x00n\x00c\x00_\x00e\x00n\x00d\x00p\x00o\x00i\x00n\x00t' @ 118955 : 1 .. (end); will stop at (end)

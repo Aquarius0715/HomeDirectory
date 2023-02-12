@@ -1,0 +1,4 @@
+2022/04/27-08:58:48.327 7a9 Reusing MANIFEST /home/student/j20/j20413/.config/Microsoft/Microsoft Teams/Session Storage/MANIFEST-000001
+2022/04/27-08:58:48.332 7a9 Recovering log #4
+2022/04/27-08:58:48.332 7a9 (ignoring error) /home/student/j20/j20413/.config/Microsoft/Microsoft Teams/Session Storage/000004.log: dropping 1951 bytes; Corruption: partial record without end(1)
+2022/04/27-08:58:48.335 7a9 Reusing old log /home/student/j20/j20413/.config/Microsoft/Microsoft Teams/Session Storage/000004.log 

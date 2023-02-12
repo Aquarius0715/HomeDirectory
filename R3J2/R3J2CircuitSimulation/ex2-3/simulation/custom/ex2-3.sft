@@ -1,0 +1,4 @@
+set tool_name "Custom VHDL"
+set corner_file_list {
+	{{"Slow Model"} {ex2-3.vho ex2-3_vhd.sdo}}
+}

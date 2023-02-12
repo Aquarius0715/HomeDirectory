@@ -1,0 +1,79 @@
+Xsession: X session started for j20413 at 2022年  4月 27日 水曜日 08:58:01 JST
+WARNING: tempfile is deprecated; consider using mktemp instead.
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/42013/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/student/j20/j20413/.Xauthority
+localuser:j20413 being added to access control list
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting USER=j20413
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting HOME=/home/student/j20/j20413
+dbus-update-activation-environment: setting DESKTOP_SESSION=xfce
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/42013/bus
+dbus-update-activation-environment: setting IM_CONFIG_PHASE=1
+dbus-update-activation-environment: setting LOGNAME=j20413
+dbus-update-activation-environment: setting GTK_IM_MODULE=ibus
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/42013
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting LANG=ja_JP.UTF-8
+dbus-update-activation-environment: setting XDG_CURRENT_DESKTOP=XFCE
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=xfce
+dbus-update-activation-environment: setting XAUTHORITY=/home/student/j20/j20413/.Xauthority
+dbus-update-activation-environment: setting XMODIFIERS=@im=ibus
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/j20413
+dbus-update-activation-environment: setting SHELL=/bin/zsh
+dbus-update-activation-environment: setting GDMSESSION=xfce
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/42013/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting QT_IM_MODULE=ibus
+dbus-update-activation-environment: setting PWD=/home/student/j20/j20413
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+dbus-update-activation-environment: setting CLUTTER_IM_MODULE=ibus
+/usr/bin/startxfce4: X server already running on display :0
+/usr/bin/iceauth:  creating new authority file /run/user/42013/ICEauthority
+xfce4-session-Message: 08:58:06.533: SSH authentication agent is already running
+gpg-agent: gpg-agentは既に実行されています - 新しいものをスタートさせません
+
+(xfce4-session:1516): xfce4-session-WARNING **: 08:58:12.128: Unable to launch "/usr/lib/evolution/3.4/evolution-alarm-notify" (specified by autostart/evolution-alarm-notify.desktop): 子プロセス“/usr/lib/evolution/3.4/evolution-alarm-notify”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+
+(xfce4-session:1516): xfce4-session-WARNING **: 08:58:12.401: Unable to launch "nm-applet" (specified by autostart/nm-applet.desktop): 子プロセス“nm-applet”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+エラー: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Tracker1 was not provided by any .service files
+
+(xfce4-session:1516): xfce4-session-WARNING **: 08:58:12.903: Unable to launch "/usr/lib/tracker/tracker-miner-fs" (specified by autostart/tracker-miner-fs.desktop): 子プロセス“/usr/lib/tracker/tracker-miner-fs”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+
+(xfce4-session:1516): xfce4-session-WARNING **: 08:58:12.913: Unable to launch "xfce4-volumed" (specified by autostart/xfce4-volumed.desktop): 子プロセス“xfce4-volumed”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+
+(xfce4-session:1516): xfce4-session-WARNING **: 08:58:12.917: Unable to launch "system-config-printer-applet" (specified by autostart/print-applet.desktop): 子プロセス“system-config-printer-applet”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+
+(xfce4-session:1516): xfce4-session-WARNING **: 08:58:13.644: Unable to launch "/usr/lib/tracker/tracker-extract" (specified by autostart/tracker-extract.desktop): 子プロセス“/usr/lib/tracker/tracker-extract”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+
+(xfce4-session:1516): xfce4-session-WARNING **: 08:58:13.646: Unable to launch "/usr/lib/tracker/tracker-miner-apps" (specified by autostart/tracker-miner-apps.desktop): 子プロセス“/usr/lib/tracker/tracker-miner-apps”の起動に失敗しました (そのようなファイルやディレクトリはありません)
+
+(xfce4-panel:1763): garcon-CRITICAL **: 08:58:13.707: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:1763): garcon-CRITICAL **: 08:58:13.713: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:1763): garcon-CRITICAL **: 08:58:13.718: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(xfce4-panel:1763): garcon-CRITICAL **: 08:58:13.728: garcon_gtk_menu_get_desktop_actions_menu: assertion 'actions != NULL' failed
+
+(wrapper-2.0:1830): Gtk-WARNING **: 08:58:17.650: Negative content width -1 (allocation 1, extents 1x1) while allocating gadget (node button, owner XfceArrowButton)
+Gtk-Message: 08:58:24.368: Failed to load module "atk-bridge"
+thunar-volman: "usb" は未サポートの USB デバイスタイプです.
+thunar-volman: "hub" は未サポートの USB デバイスタイプです.
+thunar-volman: "usb" は未サポートの USB デバイスタイプです.
+thunar-volman: "/dev/input/event4" は未サポートの入力デバイスタイプです.
+thunar-volman: "usbhid" は未サポートの USB デバイスタイプです.
+thunar-volman: "usbhid" は未サポートの USB デバイスタイプです.
+thunar-volman: "usb" は未サポートの USB デバイスタイプです.
+kdeconnect.core: Too many unpaired devices to remember them all. Ignoring  "_f412dd8f_3449_4927_9de9_a905f37c0064_"
+X connection to :0.0 broken (explicit kill or server shutdown).
+X connection to :0.0 broken (explicit kill or server shutdown).
+X connection to :0.0 broken (explicit kill or server shutdown).
+esets_gui: Fatal IO error 11 (リソースが一時的に利用できません) on X server :0.0.

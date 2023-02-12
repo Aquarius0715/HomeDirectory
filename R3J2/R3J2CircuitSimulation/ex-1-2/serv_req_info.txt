@@ -1,0 +1,16 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x0d4a2e56: DB_DBM + 0x2e56 (?write_db_info@DBM_INFO@@SI_NPBD@Z + 0x4e6)
+	</callstack>
+	<error>Current editor: GED</error>
+	<date>Tue Jan 04 11:06:25 2022</date>
+	<version>Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition</version>
+	<full_error>Access Violation at 0X0D4A2E56
+Current editor: GED
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition </full_error>
+</internal_error>
+

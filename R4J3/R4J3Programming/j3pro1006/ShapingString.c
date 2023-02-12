@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+#define N 3
+
+int main(void) {
+  char data[N][100] = {
+    "Kisarazu:29,60%",
+    "Funabashi:26,15%",
+    "Sodegaura:27,50%"
+  };
+  int i, j;
+
+  for (i = 0; i < N; i++) {
+    j = 0;
+    printf("The temperature in Celsius of ");
+    while (data[i][j] != ':') {
+      printf("%c", data[i][j]);
+      j++;
+    }
+    j++;
+    printf(" City is ");
+    while (data[i][j] != ',') {
+      printf("%c", data[i][j]);
+      j++;
+    }
+    j++;
+    printf(" and precipitation probability is ");
+    while (data[i][j] != '\0') {
+      printf("%c", data[i][j]);
+      j++;
+    }
+    printf("\n");
+  }
+  return 0;
+}

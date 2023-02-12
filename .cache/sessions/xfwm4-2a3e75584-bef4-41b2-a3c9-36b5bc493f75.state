@@ -1,0 +1,60 @@
+[CLIENT] 0x3c0002b
+  [RES_NAME] VNC Viewer
+  [RES_CLASS] realvnc-vncviewer
+  [WM_NAME] VNC Viewer
+  [GEOMETRY] (725,535,480,96)
+  [GEOMETRY-MAXIMIZED] (725,535,480,96)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x0
+[CLIENT] 0x3c00013
+  [RES_NAME] 172.22.5.112 - VNC Viewer
+  [RES_CLASS] realvnc-vncviewer
+  [WM_NAME] 172.22.5.112 - VNC Viewer
+  [GEOMETRY] (710,374,500,360)
+  [GEOMETRY-MAXIMIZED] (710,374,500,360)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x0
+[CLIENT] 0x3a00003
+  [RES_NAME] VNC Viewer
+  [RES_CLASS] realvnc-vncviewer
+  [WM_NAME] VNC Viewer
+  [GEOMETRY] (734,265,900,640)
+  [GEOMETRY-MAXIMIZED] (734,265,900,640)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x0
+[CLIENT] 0x4000084
+  [CLIENT_LEADER] 0x4000001
+  [WINDOW_ROLE] gnome-terminal-window-f4201ada-52b9-4cc6-a7f3-46bdd7d9a157
+  [RES_NAME] gnome-terminal-server
+  [RES_CLASS] Gnome-terminal
+  [WM_NAME] 端末
+  [WM_COMMAND] (1) "gnome-terminal-server"
+  [GEOMETRY] (593,322,734,459)
+  [GEOMETRY-MAXIMIZED] (593,322,734,459)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x0
+[CLIENT] 0x4000006
+  [CLIENT_LEADER] 0x4000001
+  [WINDOW_ROLE] gnome-terminal-window-e2fb87ca-1177-4bc6-bffa-a1c664ad68a9
+  [RES_NAME] gnome-terminal-server
+  [RES_CLASS] Gnome-terminal
+  [WM_NAME] 端末
+  [WM_COMMAND] (1) "gnome-terminal-server"
+  [GEOMETRY] (894,434,734,459)
+  [GEOMETRY-MAXIMIZED] (894,434,734,459)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x0
+[CLIENT] 0x3200005
+  [RES_NAME] microsoft teams - preview
+  [RES_CLASS] Microsoft Teams - Preview
+  [WM_NAME] Microsoft Teams
+  [GEOMETRY] (50,50,974,638)
+  [GEOMETRY-MAXIMIZED] (50,50,974,638)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x80

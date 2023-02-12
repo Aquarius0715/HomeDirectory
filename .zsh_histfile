@@ -1,0 +1,1021 @@
+vim No4.c
+vim No5.c
+gcc No5.c
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+vim No5.c
+ls
+cd ..
+ls
+cd j2examrev1201
+ls
+mv No6.c No7.c
+ls
+vim No6.c
+ls
+ks
+ls
+cd
+ls
+cd /home/class/j2/jikken
+ls
+cd
+ls
+cd 2021_expr2B
+ls
+okular 1_combinationLogicCircuit.pdf
+ls
+vmp&
+\/home/class/j2/jikken/2021_expr2B/
+ls
+cd /home/class/j2/jikken/2021_expr2B/
+ls
+ls
+git add -A
+git commit -m "commit"
+ls
+git push -u https://github.com/Aquarius0715/MyHomeDirectory/ origin:master
+git push origin master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory/ master:master
+ls
+cd /home/class/j2/prog/j20/processing
+ls
+cd ..
+ls
+ls
+cp -rf processing /home/student/j20/j20413/
+ls
+cd
+ls
+git add -A
+ls
+mv -rf processing R3Programming/c/AtomProjects/J2Program/
+mv  processing R3Programming/c/AtomProjects/J2Program/
+ls
+git add -A
+git fetch
+git pull
+ls
+cd CircuitSimulation
+ls
+cd
+ls
+git add -A
+git commit -m "add processing"
+git push -u https://github.com/Aquarius0715/MyHomeDirectory
+quit
+exit
+ls
+cd R3Programming
+ls
+cd c/AtomProjects/J2Program
+ls
+mkdir j2pro0106
+cd j2pro
+j2pro01
+cd j2pro0106
+ls
+vim No0106_1.c
+ls
+cd
+ls
+cd /home/class/j2/prog/j20/j2pro0106
+ls
+cd ..
+ls
+cp j2pro0106 ~/R3Programming/
+cp -rf j2pro0106 ~/R3Programming/
+cd
+cd R3Programming/c/AtomProjects/J2Program
+ls
+cd j2pro0106
+ls
+rm No0106_1.c
+ls
+cd ..
+ls
+rm j2pro0106
+rmdir j2pro0106
+ls
+cp /home/class/j2/prog/j20/j2pro0106 .
+cp -rf /home/class/j2/prog/j20/j2pro0106 .
+ls
+cd j2pro0106
+ls
+vim sample_sort.c
+ls
+ls
+cp sample_sort.c No0106.c
+ls
+cd No0106.c
+ls
+vim No0106.c
+ls
+vim straight_selection_sort.c
+vim sample_sort.c
+gcc No0106.c
+ls
+./a.out
+vim No0106.c
+gcc No0106.c
+vim No0106.c
+gcc No0106.c
+vim No0106.c
+gcc No0106.c
+vim No0106.c
+gcc No0106.c
+./a.out
+vim No0106.c
+gcc No0106.c
+./a.out
+vim No0106.c
+gcc No0106.c
+./a.out
+vim No0106.c
+gcc No0106.c
+./a.out
+vim No0106.c
+vim No0106.c
+gcc No0106.c
+./a.out
+vim No0106.c
+vim No0106.c
+gcc No0106.c
+./a.out
+vim No0106.c
+gcc
+gcc No0106.c
+./a.out
+cp No0106.c No0106_2.c
+mv No0106.c No0106_1.c
+ls
+mv No0106_2.c No0106_2_Bubble.c
+ls
+cp straight_selection_sort.c No0106_2_Straight.c
+ls
+cd No0106_2_Straight.c
+vim No0106_2_Straight.c
+ls
+cd R3Programming
+ls
+cd c/AtomProjects/J2Program
+lks
+ls
+cd j2pro0106
+ls
+ls
+vim No0106_2_Bubble.c
+gcc No0106_2_Bubble.c
+vim No0106_2_Bubble.c
+gcc No0106_2_Bubble.c
+./a.out
+ls
+vim No0106_2_Straight.c
+gcc No0106_2_Straight.c
+./a.out
+vim No0106_2_Straight.c
+gcc No0106_2_Straight.c
+./a.out
+vim No0106_2_Straight.c
+gcc No0106_2_Straight.c
+./a.out
+vim No0106_2_Straight.c
+gcc No0106_2_Bubble.c
+./a.out
+vim No0106_2_Bubble.c
+ls
+vim sample_sort.c
+vim No0106_2_Bubble.c
+gcc No0106_2_Bubble.c
+./a.out
+vim No0106_2_Straight.c
+ls
+cp No0106_2_Bubble.c No0106_3_Bubble.c
+vim No0106_3_Bubble.c
+vim No0106_3_Bubble.c
+gcc No0106_3_Bubble.c
+./a.out
+gcc No0106_2_Bubble.c
+./a.out
+vim No0106_3_Bubble.c
+gcc No0106_3_Bubble.c
+./a.out
+ls
+cp No0106_2_Straight.c No0106_3_Straight.c 
+vim No0106_3_Straight.c
+gcc No0106_2_Bubble.c
+./a.out
+gcc No0106_1.c
+/a.out
+./a.out
+vim No0106_3_Straight.c
+gcc No0106_3_Straight.c
+./a.out
+vim No0106_3_Straight.c
+gcc No0106_3_Straight.c
+./a.out
+vim No0106_3_Straight.c
+gcc No0106_
+gcc No0106_3_Straight.c
+./a.out
+gcc No0106_3_Bubble.c
+./a.out
+gcc No0106_3_Straight.c
+vim No0106_3_Bubble.c
+gcc No0106_3_Bubble.c
+./a.out
+vim No0106_2_Bubble.c
+gcc No0106_2_Bubble.c
+./a.out
+l
+ls
+ls
+cd
+ls
+git add -A
+git commit -m "commit"
+git push origin master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+ls
+ls
+git add -A
+git commint -m "commit"
+git commit -m "commit"
+git push https://github.com/Aquarius0715/MyHomeDirectory master:master
+git push https://github.com/Aquarius0715/MyHomeDirectory master:master
+git fetch
+git pull
+git pull
+git fetch
+clear
+git fetch
+git pull
+git add -A
+git commit -m "commit"
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+ls
+quit
+exit
+ls
+cd R3Programming
+ks
+ls
+rm -rf j2pro0106
+ls
+cd c/AtomProjects/
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd c
+ls
+cd AtomProjects
+ls
+cd J2Program
+ls
+cd ..
+ls
+cd AtCoder
+ls
+ls
+ls
+cd ..
+ls
+cd J2Program
+ls
+ls
+ls
+cdl
+slcd
+cd
+ls
+cd MyHome
+ls
+cd My
+ls
+cd
+ls
+ls
+cd R3Programming
+ls
+cd c/AtomProjects/J2Program/j2pro0106
+ls
+ls
+ls
+ls
+gcc No0106_3_Straight.c
+ls
+./a.out
+vim No0106_3_Bubble.c
+ls
+vim CompareRunTime.c
+ls
+cd ..
+ls
+ls
+cd j2pro0106
+ls
+vim No0106_3_Straight.c
+ls
+cd ..
+ls
+mkdir j2pro0113
+ls
+cd j2pro0113
+ls
+ls
+ls
+ls
+cd ..
+ls
+cp j2pro0106/No0106_2_Straight.c j2pro0113
+cd j2pro0113
+ls
+mv No0106_2_Straight.c No0113_1.c
+ls
+vim No0113_1.c
+gcc No0113_1.c
+./a.out
+vim No0113_1.c
+gcc No0113_1.c
+./a.out
+vim No0113_1.c
+gcc No0113_1.c
+./a.out
+vim No0113_1.c
+gcc No0113_1.c
+./a.out
+./a.out
+vim No0113_1.c
+gcc No0113_1.c
+./a.out
+ld
+ls
+cp ../j2pro0106/No0106_2_Bubble.c
+cp ../j2pro0106/No0106_2_Bubble.c .
+ls
+mv No0106_2_Bubble.c No0113_2.c
+ls
+vim No0113_2.c
+gcc No0113_2.c
+./a.out
+vim No0113_2.c
+gcc No0113_2.c
+./a.out
+vim No0113_3
+gcc No2
+vim No0113_2.c
+gcc No0113_2.c
+./a.out
+vim No0113_2.c
+gcc No0113_2.c
+./a.out
+vim No0113_2.c
+cp No0113_2.c No0113_3.c
+ls
+cd No0113_3
+cd No0113_3.c
+vim No0113_3
+ls
+rm No0113_3
+vim No0113_3.c
+gcc No0113_3.c
+./a.out
+vim No0113_3
+ls
+rm No0113_3
+./a.out
+ls
+cd R3Programming
+ls
+cd c/AtomProjects/
+ls
+cd J2Program
+ls
+cp /home/class/j2/prog/j20/j2pro0120 .
+cp -rf /home/class/j2/prog/j20/j2pro0120 .
+ls
+cd j2pro0120
+ls
+vim rpg_player_struct.c
+gcc rpg_player_struct.c
+vim rpg_player_struct.c
+gcc rpg_player_struct.c
+cp rpg_player_struct.c No0120_1.c
+vim No0120_1.c
+gcc No0120_1.c
+vim No0120_1.c
+gcc No0120_1.c
+clear
+gcc No0120_1.c
+vim No0120_1.c
+gcc No0120_1.c
+vim No0120_1.c
+gcc No0120_1.c
+./a.out
+vim No0120_1.c
+gcc No0120_1.c
+./a.out
+vim No0120_1.c
+gcc No0120_1.c
+./a.ou
+./a.out
+vim No0120_1.c
+gcc No0120_1.c
+./a.out
+vim No0120_1.c
+gcc No0120_1.c
+./a.out
+vim No0120_1.c
+gcc No0120_1.c
+./a.ou
+./a.out
+ls
+cd R3Programming/c/AtomProjects/J2Program/j2pro0120
+ls
+ls
+gcc No0120_1.c
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+vim No0120_1.c
+gcc No0120_1.c
+vim No0120_1.c
+gcc No0120_1.c
+./a.out
+./a.out
+./a.out
+./a.out
+./a.out
+vim No0120_1.c
+gcc No0120_1.c
+./a.out
+vim No0120_1.c
+gcc No0120_1.c
+./a.out
+./a.out
+./a.out
+ls
+checkAssignment
+checkAssignment2
+checkAssignment2_2
+ls
+cd .
+cd ..
+ls
+send2all
+send2all
+checkAssignment2_2
+cd j2pro0106
+ls
+mv No0106_2_Bubble.c No0106_2.c
+mv No0106_3_Bubble No0106_3.c
+mv No0106_3_Bubble.c No0106_3.c
+ls
+ls
+cd ..
+ks
+ls ..
+ls
+ls
+send2all
+checkAssignment2_2
+send2all
+checkAssignment2_2
+ls
+git fetch
+git pull
+ls
+cd CircuitSimulation
+ls
+vmp &
+ls
+git fetch
+git pull
+git add -A
+git commit -m "commit"
+git pull
+ls
+cd R3Programming
+ls
+cd c/AtomProjects/J2Program
+ls
+cd j2preexam0106
+ls
+ls
+cd ..
+lks
+ls
+mkdir j2exam0207
+cd j2exam0207
+ls
+ls
+cp ../j2preexam0106/sort_sample.c
+cp ../j2preexam0106/sort_sample.c .
+ls
+ls
+cd ..
+ls
+rm -rf j2exam0207
+ls
+cd j2pro0409
+ls
+cd ..
+lks
+ls
+cd j2pro0413
+ls
+vim No0413_1.c
+ls
+cd ..
+ls
+cp /home/class/j2/prog/j20/j2exam0207 .
+cp -rf /home/class/j2/prog/j20/j2exam0207 .
+ls
+cd j2exam0207
+ls
+cp ../j2preexam0106/sort_sample.c .
+ls
+emacs sort_sample.c &
+ls
+mv sampleNo1.c No1.c
+ls
+emacs No1.c&
+ls
+gcc No1.c
+./a.out
+ls
+rm No1.c~
+ls
+mv sampleNo2.c No2.c
+ls
+emacs No2.c &
+gcc No2.c
+gcc No2.c
+gcc No2.c
+./a.out
+./a.out
+gcc No2.c
+./a.out
+gcc No2.c
+./a.out
+./a.out
+gcc No2.c
+./a.out
+ls
+mv sampleNo3.c
+mv sampleNo3.c No3.c
+emacs No3.c
+emacs No3.c &
+gcc No3.c
+gcc No3.c
+./a.out
+gcc No3.c
+./a.out
+gcc No3.c
+./a.out
+gcc No3.c
+./a.out
+gcc No3.c
+gcc No3.c
+gcc No3.c
+./a.out
+gcc No3.c
+./a.out
+gcc No2.c
+emacs No2.c
+gcc No2.c
+emacs No2.c &
+gcc No2.c
+clear
+clear
+gcc No2.c
+emacs No3.c &
+ls
+rm -No3.c
+rm No3.c
+ls
+ls
+mv No3.c~ No3.c
+ls
+emacs No3.c &
+rm No2.c
+mv No2.c~ No2.c
+ls
+emacs No2.c
+ls
+cd ..
+ls
+send2all
+ls
+cd j2exam0207
+ls
+rm sampleNo4.c
+rm '#No2.c#'
+rm '#sort_sample.c#'
+ls
+cd ..
+ls
+send2all
+ls
+ls
+cd j2exam0207
+ls
+rm sort_sample.c
+rm a.out
+ls
+cd ..
+ls
+send2all
+cd ..
+ls
+cd J2Program
+ls
+cd j2exam
+cd j2exam0207
+ls
+send2all
+cd ..
+ls
+send2all
+ls
+cd j2exam0207
+ls
+ls -a
+rm .\#No2.c
+rm .\#sort_sample.c
+ls
+ls -a
+rm .\#sort_sample.c
+ls
+ls -a
+cd ..
+ls
+send2all
+ls
+cd j2exam0207
+ls
+emacs No2.c
+gcc No2.c
+emacs No2.c
+gcc No2.c
+./a.out
+cd ..
+send2all
+checkAssignment2
+checkAssignment2_2
+ls
+cd R3Programming
+ls
+cd c/AtomProjects/J2Program
+ls
+send2all
+cd j2pro1021
+ls
+gcc No1021_1.c
+./a.out
+gcc No1021_2.c
+./a.out
+teams
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+ls
+ssh -l j20413 cs.jga.kisarazu/ac/jp
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+ls
+exit
+ls
+mkdir NetworkTutorial
+cd NetworkTutorial
+ls
+emacs
+ls
+cd NetworkTutorial
+ls
+emacs
+exit
+pwd
+cd
+cd /home/student/j21/j21415
+vmp&
+vmp^
+vmp&
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+ls
+vnc
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+cd /home/class/j3/network/expr/PDF/
+ls
+okular
+olular J3_nwEx_0
+okular J3_nwEx_0
+okular /home/class/j3/network/expr/PDF/J3_nwEx_02_2022-04-21.pdf
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+exit
+exit
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+ls
+clear
+clear
+ls
+mkdir J3Programming
+cd J3Programming
+mkdir j3pro0421
+cd j3pro0421
+ls
+emacs 
+gcc No1.c
+./a.out
+./a.out
+./a.out
+fg
+gcc No2.c
+fg
+gcc No3.c
+./a.out
+ls
+fg
+gcc No4.c
+./a.out
+fg %$EDITOR:t
+fg %$EDITOR:t
+fg %$EDITOR:t
+fg %$EDITOR:t
+fg %$EDITOR:t
+jobs
+kill 2
+kill %2
+jobs
+fg
+gcc No5.c
+./a.out
+fg
+fg
+gcc No6.c
+fg
+gcc No5.c
+./a.out
+fg
+gcc No5.c
+./a.out
+fg
+gcc No5.c
+./a.out
+fg
+gcc No5.c
+./a.out
+fg
+fg
+gcc No7.c
+fg
+gcc No7.c
+./a.out
+fg
+gcc No9.c
+./a.out
+ls
+fg
+gcc No10.c
+./a.out
+fg
+gcc No11.c
+fg
+gcc No11.c
+clear
+gcc No11.c
+fg
+fg
+gcc No11.c
+fg
+gcc No11.c
+./a.out
+./a.out
+fg
+gcc No11.c
+./a.out
+./a.out
+fg
+gcc No11.c
+./a.out
+./a.out
+fg
+gcc No11.c
+./a.out
+fg
+gcc No11.c
+./a.out
+fg
+gcc No11.c
+fg
+gcc No11.c
+./a.out
+./a.out
+fg
+gcc No11.c
+./a.out
+./a.out
+./a.out
+cd
+ls
+git add -A
+git pull
+git fetch
+git pull
+git commit -m "commit"
+git fetch
+git pull
+jobs
+kill %2
+jobs
+stop
+git fetch
+git add -A
+git commit -m "commit"
+ls
+git add -A
+git commit -m "commit"
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory.git master:master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory.git
+ls
+git push origin master
+fg
+emacs
+git push origin
+git push origin master
+fg
+git push origin
+fg
+git push origin
+git credentical fill
+git credential fill
+cd
+cd ./ssh
+cd .ssh
+ls
+fg
+jobs
+fg
+ssh-keygen -t github
+ssh-keygen -t rsa
+ls
+ssh-keygen -t rsa
+ls
+fg
+git push origin master
+ls
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+git remote set-url origin github.com:Aquarius0715/MyHomeDirectory.git
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+git push -u origin master
+cd
+ls
+git push -u origin master
+git push -u origin master
+ls
+fg
+git push origin master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+ls
+git add -A
+git commit -m "commit"
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+git push origin master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+ls
+cd J3Programming
+ls
+cd j2
+cd j3pro0421
+ls
+gcc No11.c
+./a.out
+./a.out
+./a.out
+emacs
+gcc No11.c
+./a.out
+exit
+exit
+ls
+ls
+ssh 172.22.5.112
+ssh -l raspi4-12 172.22.5.112
+ssh -l raspi4-12 172.22.5.112
+ifconfig
+ssh -l raspi4-12 172.22.5.112
+gnome-screenshot
+ks
+ls
+cd ..
+ls
+ls
+exit
+ls
+cd J3Programming
+kls
+ls
+cd j3pro0421
+ks
+ls
+gcc No11.c
+./a.out
+git add -A
+git commit -m "commit"
+git push -u origin master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+git pull 
+git fetch
+git pull 
+git add -A
+git commit -m "commit"
+git pull 
+git push -u https://github.com/Aquarius0715/MyHomeDirectory master:master
+git add -A
+git commit -m "commit"
+git pull
+ls
+git pull
+git add -A
+git commit -m "commit"
+git push -u https://github.com/Aquarius0715/MyHomeDirectory/
+ls
+exit
+ls
+ls
+git fetch
+git pull
+ls
+cd R4J3
+ls
+cd R4J3NetworkIntroduction
+ls
+cd ..
+ls
+cd ..
+ls
+rm -rf R2J1Programming
+ls
+git add -A
+git commit -m "commit"
+git push -u https://github.com/Aquarius0715/MyHomeDirectory
+ls
+ls
+git pull
+ls
+cd R4J3
+ls
+cd R4J3NetworkExercise
+ls
+cp /home/class/j3/network/expr
+ls
+cp -rf /home/class/j3/network/expr/PDF .
+ls
+cd PDF
+ls
+git add -A
+git commit -m "commit"
+git push origin master
+git push -u https://github.com/Aquarius0715/MyHomeDirectory
+ls
+ssh cs.jga.kisarazu.ac.jp
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+ssh -l j20413 cs.jga.kisarazu.ac.jo
+ssh -l j20413 cs.jga.kisarazu.ac.jp
+exit
+: 1651114318:0;ls
+: 1651114326:0;ssh cs.jga.ac.jo
+: 1651114328:0;ssh cs.jga.ac.jp
+: 1651114340:0;ssh -l j20413 cs.jga.kisarazu.ac.jp
+: 1651118889:0;\ls
+: 1651118890:0;ls
+: 1651118906:0;git pull
+: 1651118913:0;ls
+: 1651118919:0;cd R4J3
+: 1651118919:0;ls
+: 1651118926:0;cd R4J3NetworkExercise
+: 1651118927:0;ls
+: 1651118930:0;rm test.c
+: 1651118935:0;git add -A
+: 1651118945:0;git commit -m "delete debug file"
+: 1651118950:0;ls
+: 1651119757:0;ls
+: 1651119758:0;cd
+: 1651119759:0;s
+: 1651119760:0;ls
+: 1651119766:0;git add -A

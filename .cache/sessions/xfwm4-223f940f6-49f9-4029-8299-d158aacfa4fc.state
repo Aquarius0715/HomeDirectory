@@ -1,0 +1,33 @@
+[CLIENT] 0x3600006
+  [CLIENT_ID] 2152cac14-e617-48fb-93b8-d8f3051e2b6a
+  [CLIENT_LEADER] 0x3600008
+  [WINDOW_ROLE] okular::Shell#1
+  [RES_NAME] okular
+  [RES_CLASS] okular
+  [WM_NAME] PowerPoint プレゼンテーション  — Okular
+  [GEOMETRY] (0,55,1024,682)
+  [GEOMETRY-MAXIMIZED] (379,60,640,480)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10300
+[CLIENT] 0x3a00006
+  [CLIENT_LEADER] 0x3a00001
+  [WINDOW_ROLE] gnome-terminal-window-958604cc-b464-4fc9-87ce-8fdac2a7867b
+  [RES_NAME] gnome-terminal-server
+  [RES_CLASS] Gnome-terminal
+  [WM_NAME] 端末
+  [WM_COMMAND] (1) "gnome-terminal-server"
+  [GEOMETRY] (5,60,734,459)
+  [GEOMETRY-MAXIMIZED] (5,60,734,459)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x0
+[CLIENT] 0x2e00005
+  [RES_NAME] microsoft teams - preview
+  [RES_CLASS] Microsoft Teams - Preview
+  [WM_NAME] Microsoft Teams
+  [GEOMETRY] (-63,74,974,638)
+  [GEOMETRY-MAXIMIZED] (-63,74,974,638)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x80

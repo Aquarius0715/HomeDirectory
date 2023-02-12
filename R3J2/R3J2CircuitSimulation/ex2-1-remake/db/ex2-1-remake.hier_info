@@ -1,0 +1,13 @@
+|ex2-1-remake
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+K => inst7~1.IN0
+K => inst4~1.IN0
+K => inst~1.IN0
+J => inst7~0.IN1
+J => inst4~0.IN1
+J => inst~0.IN1
+CLK => inst3.IN0
+Q2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+

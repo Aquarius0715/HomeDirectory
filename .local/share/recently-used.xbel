@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///local/vmware/Windows10/Windows10.vmx" added="2022-04-13T00:03:44.985657Z" modified="2022-04-20T00:45:05.456377Z" visited="2022-04-13T00:03:44.985659Z">
+    <title>Windows10</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-vmware-vm"/>
+        <bookmark:applications>
+          <bookmark:application name="vmplayer" exec="&apos;vmplayer %u&apos;" modified="2022-04-13T00:03:44.985665Z" count="1"/>
+          <bookmark:application name="VMware Player" exec="&apos;vmplayer %u&apos;" modified="2022-04-20T00:45:05.456362Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

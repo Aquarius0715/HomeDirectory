@@ -1,0 +1,32 @@
+[CLIENT] 0x3200005
+  [RES_NAME] microsoft teams - preview
+  [RES_CLASS] Microsoft Teams - Preview
+  [WM_NAME] Microsoft Teams
+  [GEOMETRY] (748,179,974,638)
+  [GEOMETRY-MAXIMIZED] (748,179,974,638)
+  [SCREEN] 0
+  [DESK] 3
+  [FLAGS] 0x10000
+[CLIENT] 0x3a0000b
+  [CLIENT_LEADER] 0x3a00001
+  [RES_NAME] vmplayer
+  [RES_CLASS] Vmplayer
+  [WM_NAME] VMware Workstation 16 Player (Non-commercial use only)
+  [WM_COMMAND] (1) "vmplayer"
+  [GEOMETRY] (5,61,1918,983)
+  [GEOMETRY-MAXIMIZED] (5,61,1918,983)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10000
+[CLIENT] 0x3e00006
+  [CLIENT_LEADER] 0x3e00001
+  [WINDOW_ROLE] gnome-terminal-window-cfb37dd0-043c-4a02-b1f5-40fd7ef84d52
+  [RES_NAME] gnome-terminal-server
+  [RES_CLASS] Gnome-terminal
+  [WM_NAME] 端末
+  [WM_COMMAND] (1) "gnome-terminal-server"
+  [GEOMETRY] (878,238,734,459)
+  [GEOMETRY-MAXIMIZED] (878,238,734,459)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x0

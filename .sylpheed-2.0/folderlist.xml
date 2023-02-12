@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<folderlist>
+    <folder type="mh" name="メール箱" path="Mail">
+        <folderitem type="junk" name="junk" path="junk" threaded="1" mtime="1607387511" new="0" unread="0" total="0" />
+        <folderitem type="trash" name="trash" path="trash" threaded="1" mtime="1607387511" new="0" unread="0" total="0" />
+        <folderitem type="queue" name="queue" path="queue" threaded="1" mtime="0" new="0" unread="0" total="0" />
+        <folderitem type="outbox" name="sent" path="sent" threaded="1" mtime="1607388925" new="0" unread="0" total="2" />
+        <folderitem type="draft" name="draft" path="draft" threaded="1" mtime="1606784883" new="0" unread="0" total="0" />
+        <folderitem type="inbox" name="inbox" path="inbox" threaded="1" mtime="1606784885" new="0" unread="0" total="0" />
+    </folder>
+    <folder type="imap" name="j20413@j.kisarazu.ac.jp" account_id="1" />
+</folderlist>

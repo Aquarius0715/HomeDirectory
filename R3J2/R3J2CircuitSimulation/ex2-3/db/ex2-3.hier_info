@@ -1,0 +1,11 @@
+|ex2-3
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+in => inst~1.IN0
+in => inst4~1.IN0
+CLK => inst2.IN0
+CLK => inst5.IN0
+CLK => inst1.IN0
+Q2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

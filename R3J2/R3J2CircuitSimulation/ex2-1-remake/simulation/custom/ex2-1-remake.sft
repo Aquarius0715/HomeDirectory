@@ -1,0 +1,4 @@
+set tool_name "Custom VHDL"
+set corner_file_list {
+	{{"Slow Model"} {ex2-1-remake.vho ex2-1-remake_vhd.sdo}}
+}

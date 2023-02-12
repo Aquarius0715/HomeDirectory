@@ -1,0 +1,41 @@
+﻿#include <stdio.h>
+
+/*test*/
+
+int value(char c) {
+  switch (c) {
+  case '\'':
+    return 1; break;
+  case '"':
+    return 2; break;
+  case '/':
+    return 3; break;
+  case '*':
+    return 4; break;
+  case '\\':
+    return 5; break;
+  default:
+    return 0 break;
+  }
+}
+
+int main () {
+  char c = '"', d[10] = "\*\\'\\\"*/";
+  printf("%c/*%c". c. d[0]);
+  int state[6][5];
+  
+  /*test2*/
+
+  int now, next, k = 0;
+
+  char = c;
+
+  /*gets(buffer); printf("//");*/
+  printf("//"); printf("/*");
+
+  /*test3*/
+
+  printf("\"*/");
+  
+  return 0;
+}
