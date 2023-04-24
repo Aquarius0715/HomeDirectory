@@ -320,19 +320,18 @@ ResultSet selectionSort(SortType E_sortType) {
 	 int min = num[i];
 	 int k = i;
 	 for (int j = i + 1; j < NUMBER; j++) {
+		compareCount++;
 		switch (E_sortType) {
 		case ASCENDING:
 		  if (num[j] < min) {
 			 min = num[j];
 			 k = j;
-			 compareCount++;
 		  }
 		  break;
 		case DESCENDING:
 		  if (num[j] > min) {
 			 min = num[j];
 			 k = j;
-			 compareCount++;
 		  }
 		  break;
 		case NONE_SORT_TYPE:
@@ -353,18 +352,17 @@ ResultSet bubbleSort(SortType E_sortType) {
   int swapCount = 0;
   for (int i = 0; i < NUMBER - 1; i++) {
 	 for (int j = NUMBER - 1; j > i; j--) {
+		compareCount++;
 		switch (E_sortType) {
 		case ASCENDING:
 		  if (num[j - 1] > num[j]) {
 			 swapElement(num, j - 1, j);
-			 compareCount++;
 			 swapCount++;
 		  }
 		  break;
 		case DESCENDING:
 		  if (num[j - 1] < num[j]) {
 			 swapElement(num, j - 1, j);
-			 compareCount++;
 			 swapCount++;
 		  }
 		  break;
@@ -426,8 +424,6 @@ ResultSet quickSort(SortType E_sortType, int* num, int left, int right, int comp
 	 quickSort(E_sortType, num, R + 1, right, compareCount, swapCount);
   }
   ResultSet result = {E_sortClass, E_sortType, E_dataType, compareCount, swapCount, num};
-  compareCount = -1;
-  swapCount = -1;
   return result;
 }
 
