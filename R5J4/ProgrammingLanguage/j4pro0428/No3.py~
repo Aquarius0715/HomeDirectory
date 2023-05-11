@@ -1,0 +1,2 @@
+str = input("Type string: ")
+print(str.count)

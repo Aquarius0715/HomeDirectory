@@ -1,0 +1,6 @@
+import csv
+
+with open('train.csv', 'r') as f:
+    reader = scv.reader(f)
+    for line in reader:
+        print(line)

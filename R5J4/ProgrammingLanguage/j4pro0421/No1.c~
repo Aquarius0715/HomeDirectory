@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+  int n = 0;
+  while (n < 2 || n > 100000) {
+	 printf("Type number(range 2-100000): ");
+	 scanf("%d", &n);
+  }
+  for (int i = 1; i <= n; i++) {
+	 printf("%d: ", i);
+	 if (i % 3 != 0) {
+		printf("いつやるか？\n");
+	 } else {
+		printf("いまでしょ！\n");
+	 }
+  }
+  return 0;
+}

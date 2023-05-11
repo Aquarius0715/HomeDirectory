@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+  int n;
+  int ima=0;
+  printf("Input: ");
+  scanf("%d", &n);
+  for (int i=0; i<=n; i++) {
+	 if (i%3 == 0) {
+		printf("いまでしょ！");
+		ima=1;
+	 }
+	 int m = n;
+	 while (m>0) {
+		if (m%10 == 3) {
+		  printf("いまでしょ！");
+		  ima=1;
+		}
+	 }
+	 if (ima == 0) {
+		printf("いつやるか？");
+	 }
+	 ima=0;
+  }
+}
