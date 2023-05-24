@@ -1,0 +1,21 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+def mathfunc(x):
+    y = np.sqrt(-5/3 * x**2+5)
+    return y
+
+xmin = 10
+xmax = 10
+num = 200
+x = no.linspace(xmin, xmax, num)
+
+y = mathfunc(x)
+
+plt.plot(x, y)
+
+plt.xlim(xmin, xmax)
+
+plt.grid(True)
+
+plt.show()

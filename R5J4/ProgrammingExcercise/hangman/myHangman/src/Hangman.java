@@ -12,7 +12,7 @@ public class Hangman implements KeyListener {
     @Override
     public void keyTyped(KeyEvent e) {
         if (Character.isLowerCase(e.getKeyChar())) {
-
+				System.out.println("Pushed The Key")
         }
     }
 

@@ -1,6 +1,7 @@
 /** 各ヘッダーのインクルード */
 #include <stdio.h>  // 標準入出力
 #include <stdlib.h> // system()を呼び出すのに必要
+#include <time.h>
 
 #define LIMIT_TIMES 7  // 回数制限の定義
 
@@ -11,13 +12,13 @@ typedef enum Boolean { // フラグを構成する列挙
 } Boolean;
 
 /** hangman根幹変数の宣言 */
-char correctWord[256+1] = "apple";                           // 正解単語を格納する配列
-int wordLength = (sizeof(correctWord) / sizeof(char)) - 1;   // 正解単語の文字列長を格納する変数
-int remainCount = LIMIT_TIMES;                               // 残りの回答回数を格納する変数
+char *correctWord;                                // 正解単語を格納する配列
+int wordLength;   // 正解単語の文字列長を格納する変数
+int remainCount;                               // 残りの回答回数を格納する変数
 char usedChar[LIMIT_TIMES+1];                                // 使われた単語を格納するための配列
-char correctFlag[wordLength+1];                              // 画面に状況を表示するための文字列を格納するための配列
-Boolean isCorrect = FALSE;                                   // 正誤判定をするためのフラグ
-Boolean isRestart = FALSE;
+char *correctFlag;                              // 画面に状況を表示するための文字列を格納するための配列
+Boolean isCorrect;                                   // 正誤判定をするためのフラグ
+Boolean isRestart;
 
 
 /** 関数プロトタイプ宣言 */
@@ -25,16 +26,12 @@ char input();
 void initialize();
 
 /** メイン関数 */
-int main(void) {  
-  /** 表示用配列をハイフンで初期化 */
-  int i;
-  for (i = 0; i < wordLength; i++) {
-	 correctFlag[i] = '-';
-  }
-
+int main(void) {
   /** メインループ。残り回数が0になるまでまたは正解するまで繰り返す */
   do {
 	 system("clear");
+	 initialize();
+	 int i;
 	 while (remainCount > 0 && isCorrect == FALSE) {
 		/* 表示の処理 */
 		printf("単語: ");
@@ -134,13 +131,49 @@ char input() {
 	return buffer;
 }
 
-void initialize() {
-  correctWord = "apple";
-  wordLength = (sizeof(correctWord) / sizeof(char)) - 1;
+         void initialize() {
+           int i;
+                char buffer[512+1];
+         char word[64+1];
+           FILE *fp = fopen("toeic1500_utf.dat", "r");
+                if (fp == NULL) {
+           printf("word file cannot open!\n");
+	 exit(-1);
+  }
+  srand((unsigned int) time(NULL));
+   for (int i = rand() % 1500; i > 0 && fgets(buffer, 512+1, fp) != NULL; i--);
+int spaceCount = 0;
+int wordCount = 0;
+  i = 0;
+           while (buffer[i] != '\0') {
+         if (buffer[i] == ' ') {
+         spaceCount++;
+           i++;
+           continue;
+	 }
+	 if (spaceCount == 1) {
+		word[wordCount] = buffer[i];
+  wordCount++;
+  }
+	 i++;
+}
+i = 0;
+  while (word[i] != '\0') i++;
+  wordLength = i;
+             correctWord = (char*) malloc(sizeof(char) * (wordLength+1));
+  i = 0;
+         while (word[i] != '\0') {
+           correctWord[i] = word[i];
+         i++;
+  }
+  correctFlag = (char*) malloc(sizeof(char) * (wordLength+1));
   remainCount = LIMIT_TIMES;
-  int i;
-  for (i = 0; i < LIMIT_TIMES; i++) {
+  isCorrect = FALSE;
+  isRestart = FALSE;
+           for (i = 0; i < LIMIT_TIMES; i++) {
 	 usedChar[i] = '\0';
   }
-  for (i = 0; i < WORDLENGTH)
+  for (i = 0; i < wordLength; i++) {
+	 correctFlag[i] = '-';
+  }
 }
