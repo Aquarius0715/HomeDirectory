@@ -106,6 +106,8 @@ int main(void) {
 	 } else {
 		printf("失敗。。。\n");
 	 }
+
+	 /* リトライするかを聞く */
 	 char buffer = 'A';
 	 while (buffer != 'y' && buffer != 'Y' && buffer != 'n' && buffer != 'N') {
 		printf("続行しますか？y/n: ");
@@ -122,6 +124,7 @@ int main(void) {
   return 0;
 }
 
+/** 文字を一文字入力するための関数 */
 char input() {
    char buffer;
 	scanf("%c", &buffer);
@@ -131,46 +134,49 @@ char input() {
 	return buffer;
 }
 
-         void initialize() {
-           int i;
-                char buffer[512+1];
-         char word[64+1];
-           FILE *fp = fopen("toeic1500_utf.dat", "r");
-                if (fp == NULL) {
-           printf("word file cannot open!\n");
+/** ゲームに必要な変数や初期化をする関数 */
+void initialize() {
+  int i;
+  char buffer[512+1];
+  char word[64+1];
+
+  /*  */
+  FILE *fp = fopen("toeic1500_utf.dat", "r");
+  if (fp == NULL) {
+	 printf("word file cannot open!\n");
 	 exit(-1);
   }
   srand((unsigned int) time(NULL));
-   for (int i = rand() % 1500; i > 0 && fgets(buffer, 512+1, fp) != NULL; i--);
-int spaceCount = 0;
-int wordCount = 0;
+  for (int i = rand() % 1500; i >= 0 && fgets(buffer, 512+1, fp) != NULL; i--);
+  int spaceCount = 0;
+  int wordCount = 0;
   i = 0;
-           while (buffer[i] != '\0') {
-         if (buffer[i] == ' ') {
-         spaceCount++;
-           i++;
-           continue;
+  while (buffer[i] != '\0') {
+	 if (buffer[i] == ' ') {
+		spaceCount++;
+		i++;
+		continue;
 	 }
 	 if (spaceCount == 1) {
 		word[wordCount] = buffer[i];
-  wordCount++;
-  }
+		wordCount++;
+	 }
 	 i++;
-}
-i = 0;
+  }
+  i = 0;
   while (word[i] != '\0') i++;
   wordLength = i;
-             correctWord = (char*) malloc(sizeof(char) * (wordLength+1));
+  correctWord = (char*) malloc(sizeof(char) * (wordLength+1));
   i = 0;
-         while (word[i] != '\0') {
-           correctWord[i] = word[i];
-         i++;
+  while (word[i] != '\0') {
+	 correctWord[i] = word[i];
+	 i++;
   }
   correctFlag = (char*) malloc(sizeof(char) * (wordLength+1));
   remainCount = LIMIT_TIMES;
   isCorrect = FALSE;
   isRestart = FALSE;
-           for (i = 0; i < LIMIT_TIMES; i++) {
+  for (i = 0; i < LIMIT_TIMES; i++) {
 	 usedChar[i] = '\0';
   }
   for (i = 0; i < wordLength; i++) {
