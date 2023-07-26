@@ -1,3 +1,0 @@
-# This file is created by ibus-daemon, please do not modify it
-IBUS_ADDRESS=unix:abstract=/tmp/dbus-EDrWhYSL,guid=ea9f0cd825db1f118533d0bd619afe85
-IBUS_DAEMON_PID=6644

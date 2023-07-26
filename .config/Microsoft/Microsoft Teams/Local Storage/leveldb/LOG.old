@@ -1,6 +1,0 @@
-2022/04/21-11:17:33.918 abd Reusing MANIFEST /home/student/j20/j20413/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/MANIFEST-000001
-2022/04/21-11:17:33.933 abd Recovering log #369
-2022/04/21-11:17:33.937 abd Reusing old log /home/student/j20/j20413/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/000369.log 
-2022/04/21-11:18:37.412 c7e Level-0 table #373: started
-2022/04/21-11:18:37.417 c7e Level-0 table #373: 81415 bytes OK
-2022/04/21-11:18:37.424 c7e Delete type=0 #369

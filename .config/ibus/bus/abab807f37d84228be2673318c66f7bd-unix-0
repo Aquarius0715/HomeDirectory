@@ -1,3 +1,0 @@
-# This file is created by ibus-daemon, please do not modify it
-IBUS_ADDRESS=unix:abstract=/tmp/dbus-AUSTnRMJ,guid=60bd4525f8e4f9fa32fdc594606f9b03
-IBUS_DAEMON_PID=2084
