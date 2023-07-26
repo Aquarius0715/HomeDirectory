@@ -1,0 +1,164 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct Pair {
+  float n;
+  float m;
+  struct Pair* nextPt;
+} Pair;
+
+typedef struct Float {
+  float n;
+  struct Float* nextPt;
+} Float;
+
+typedef struct Matrix {
+  float a;
+  float b;
+  float c;
+  float d;
+} Matrix;
+
+typedef struct Vector {
+  float a;
+  float b;
+} Vector;
+
+Pair* loadCSV(char* filename);
+void splitToFloat(Pair* points, Float** f1, Float** f2);
+float sigma(Float* f1, Float* f2);
+float countElement(Float* element);
+Matrix inverseMatrix(Matrix mat);
+Vector dotProduct(Vector vec, Matrix mat);
+
+int main(void) {
+  Float *X = NULL;
+  Float *Y = NULL;
+  
+  Pair* points = loadCSV("example1.csv");
+  splitToFloat(points, &X, &Y);
+  
+  Matrix A = {sigma(X, X), sigma(X, NULL)
+				  ,sigma(X, NULL), countElement(X)};
+  Vector B = {sigma(X, Y)
+  				  ,sigma(Y, NULL)};
+  
+  Matrix Ainv = inverseMatrix(A);
+  Vector ans = dotProduct(B, Ainv);
+  printf("(%f %f)\n", ans.a, ans.b);
+  return 0;
+}
+
+Vector dotProduct(Vector vec, Matrix mat) {
+  Vector vector = {vec.a*mat.a + vec.b*mat.c
+						 ,vec.a*mat.b + vec.b*mat.d};
+  return vector;
+}
+
+Matrix inverseMatrix(Matrix mat) {
+  float temp = 1/(mat.a*mat.d - mat.b*mat.c);
+  Matrix invMat = {temp*mat.d, temp*(-1)*mat.b
+						 ,temp*(-1)*mat.c, temp*mat.a};
+  return invMat;
+}
+
+float countElement(Float* element) {
+  Float* currentElement = element;
+  float count = 0;
+  while (element != NULL) {
+	 element = element -> nextPt;
+	 count++;
+  }
+  return count;
+}
+
+float sigma(Float* f1, Float* f2) {
+  float sum = 0;
+  if (f1 == NULL && f2 == NULL) {
+	 printf("Value Error\n");
+	 exit(-1);
+  }
+  else if (f1 != NULL && f2 != NULL) {
+	 Float *currentFloat1 = f1;
+	 Float *currentFloat2 = f2;
+	 while (currentFloat1 != NULL || currentFloat2 != NULL) {
+		sum += currentFloat1 -> n * currentFloat2 -> n;
+		currentFloat1 = currentFloat1 -> nextPt;
+		currentFloat2 = currentFloat2 -> nextPt;
+	 }
+	 return sum;
+  }
+  else if (f1 != NULL || f2 != NULL) {
+	 Float *currentFloat;
+	 if (f1 == NULL) {
+		currentFloat = f2;
+	 }
+	 else if (f2 == NULL) {
+		currentFloat = f1;
+	 }
+	 while (currentFloat != NULL) {
+		sum += currentFloat -> n;
+		currentFloat = currentFloat -> nextPt;
+	 }
+	 return sum;
+  }
+  return sum;
+}
+
+void splitToFloat(Pair* points, Float** f1, Float** f2) {
+  Pair *currentPoint = points;
+  while (currentPoint != NULL) {
+	 Float *newFloat = (Float*) malloc(sizeof(Float));
+	 newFloat -> n = currentPoint -> n;
+	 newFloat -> nextPt = NULL;
+	 if (*f1 == NULL) {
+		*f1 = newFloat;
+	 } else {
+		Float *currentFloat = *f1;
+		while (currentFloat -> nextPt != NULL) {
+		  currentFloat = currentFloat -> nextPt;
+		}
+		currentFloat -> nextPt = newFloat;
+	 }
+	 newFloat = (Float*) malloc(sizeof(Float));
+	 newFloat -> n = currentPoint -> m;
+	 newFloat -> nextPt = NULL;
+	 if (*f2 == NULL) {
+		*f2 = newFloat;
+	 } else {
+		Float *currentFloat = *f2;
+		while (currentFloat -> nextPt != NULL) {
+		  currentFloat = currentFloat -> nextPt;
+		}
+		currentFloat -> nextPt = newFloat;
+	 }
+	 currentPoint = currentPoint -> nextPt;
+  }
+}
+
+Pair* loadCSV(char* filename) {
+  FILE *fp;
+  fp = fopen(filename, "r");
+  if (fp == NULL) {
+	 printf("FileNotFoundError\n");
+	 exit(-1);
+  }
+  Pair *points = NULL;
+  float x, y;
+  while (fscanf(fp, "%f, %f\n", &x, &y) != EOF) {
+	 Pair *newPoint = (Pair*) malloc(sizeof(Pair));
+	 newPoint -> n = x;
+	 newPoint -> m = y;
+	 newPoint -> nextPt = NULL;
+	 if (points == NULL) {
+		points = newPoint;
+	 } else {
+		Pair *currentPoint = points;
+		while (currentPoint -> nextPt != NULL) {
+		  currentPoint = currentPoint -> nextPt;
+		}
+		currentPoint -> nextPt = newPoint;
+	 }
+  }
+  return points;
+}
